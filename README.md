@@ -1,8 +1,8 @@
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](http://creativecommons.org/licenses/by-sa/4.0/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](http://creativecommons.org/licenses/by-sa/4.0/) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-All content in this repository is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise marked.
+**Content:** All of the content in this repository is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise marked.
 
-**Software:** All of the source code contained herein is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Software:** All of the source code contained in this repository is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 # CSCI 239
 Course materials for CSCI 239
