@@ -1,4 +1,4 @@
-# CSCI239
+# CSCI 239
 Course materials for CSCI 239
 
 ## To clone
