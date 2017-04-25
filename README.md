@@ -2,8 +2,7 @@
 
 Except where otherwise [noted](#software), content in this repository is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).
 
-### Software
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### Software [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 All code contained herein is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
