@@ -1,6 +1,6 @@
 ---
 title: "How to Use zyBooks"
-due_at: '2018-02-05T17:30:00Z'
+due_at: '2018-08-28T15:35:00Z'
 notify_of_update: false
 ---
 
@@ -9,7 +9,7 @@ publisher. Follow these instructions:
 
 1. Sign up (or log in if you already have an account) at zyBooks.com, using your
    csbsju.edu email domain
-1. Enter zyBook code CBSJUCSCI239Fall2017
+1. Enter zyBook code CSB239IversonFall2018
 1. Click Subscribe
 
 You can begin subscribing on 2017/08/14. The cost to subscribe is $48; any
