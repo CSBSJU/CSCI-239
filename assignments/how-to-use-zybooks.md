@@ -19,4 +19,4 @@ valid through 2018/01/04. If you need to buy your subscription through the
 bookstore, please contact them, and they will order one for you.
 
 Please complete the How to Use zyBooks tutorial before coming to the first class
-on Tuesday, August 29.
+on Tuesday, August 28.
