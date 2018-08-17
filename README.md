@@ -13,35 +13,38 @@ assignment---will be handled.[^1]<sup>,</sup>[^2]
 
 ## Introduction
 ### Purpose
-CSCI 310 is an introduction to computer systems and architecture. Topics covered
-include digital systems, machine level data representation, processor design,
-assembly-level machine organization, memory systems, system control,
-organization of operating systems, concurrency, and scheduling. The course will
-focus on the layered architecture of computer systems in order to understand how
-parts operate and cooperate to make an integrated machine. An important outcome
-of this course is helping students become more informed programmers and computer
-scientists. Students who complete the successfully successfully should expect to
-be able to:
-* identify and describe the key components of a computer system and how the
-  components interact.
-* explain the layered architecture of computer systems and how each layer
-  relates to the others.
-* explain how data and programs are represented inside computers.
-* convert data from one representation to another.
-* read, write, and debug assembly language and machine language programs.
-* use logic equations, tables, and circuits to make the connection between
-  software and hardware.
-* explain the role of operating systems in managing storage, processes and
-  programs.
+While most people understand that computing depends at its core on mathematics;
+most do not understand the peculiar nature of the mathematics underlying
+computing. Modern computers are digital; that is, they work with distinct values
+that can be represented by (binary) integer codes. The mathematics that deals
+with the manipulation of distinct or discrete values is called *discrete
+mathematics*.
+
+This courses approaches discrete mathematics from a point of view that is
+practical for computer science students. We will cover logic, proof, sets,
+relations, functions, recursion and induction, counting principles, and
+probability, all with an eye to how they are used throughout computing. We will
+use functional programming in Haskell as a way to visualize and demonstrate
+these mathematical structures.
+
+To meet the objectives for this course, you will be able:
+
+* to create and explain the steps of simple logical proofs
+* to find the solution to simple recurrence relations
+* to apply induction demonstrate the correctness of solutions to a variety of
+  computing problems
+* to think clearly and critically about probabilistic issues in computing
+* to write medium scale programs in a modern functional language (Haskell)
 
 ### Requirements
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in [RFC 2119].
 
-Students are REQUIRED to have access to the textbook, *Computer Systems* by J.
-Stanley Warford. This course is based on the fifth edition of the book, thus, it
-is RECOMMENDED that students acquire this edition.
+Students are REQUIRED to have access to the zyBook, [*Discrete
+Mathematics*](https://learn.zybooks.com/zybook/CSB239IversonFall2018) by Irani
+et al. This course is based on the 2018 release, thus, it is RECOMMENDED that
+students acquire this edition.
 
 ### Terminology
 class meeting
@@ -95,7 +98,7 @@ excused absence and at the discretion of the instructor.
 ### Emails / Outlook meeting invitations
 I welcome emails and Outlook meeting invitations from students. However, you
 SHOULD use the following guidelines when sending either to me:
-* start the subject line with CS310, CS 310, CSCI310, or CSCI 310
+* start the subject line with CS239, CS 239, CSCI239, or CSCI 239
 * provide a concise description in subject line
 * use a salutation like, "Good afternoon Prof. Iverson" or just "Prof. Iverson"
 * conclude your message with a signature like, "Sincerely, Jeremy" or even as
@@ -114,7 +117,7 @@ The final grade for the course will be based on the percentages shown below.
 | Final exam     | 28% |
 
 Grading is mainly based on the performance of each student compared to the class
-as a whole. In general, the following guidelines are followed expect in certain
+as a whole. In general, the following guidelines are followed except in certain
 situations where the instructor sees a need for adjustments. A grade of F MAY be
 given in situations of frequent unexcused absences, unsuccessful completion of
 required work in a timely manner, or evident lack of understanding of core
