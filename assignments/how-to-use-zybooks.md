@@ -1,6 +1,6 @@
 ---
 title: "How to Use zyBooks"
-due_at: '2018-08-28T15:35:00Z'
+due_at: '2018-08-28T14:35:00Z'
 notify_of_update: false
 ---
 
