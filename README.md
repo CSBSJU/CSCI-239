@@ -41,10 +41,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in [RFC 2119].
 
-Students are REQUIRED to have access to the zyBook, [*Discrete
-Mathematics*](https://learn.zybooks.com/zybook/CSB239IversonFall2018) by Irani
-et al. This course is based on the 2018 release, thus, it is RECOMMENDED that
-students acquire this edition.
+Students are REQUIRED to have access to the zyBook, [Discrete
+Mathematics](https://learn.zybooks.com/zybook/CSB239IversonFall2018) by Irani et
+al.
 
 ### Terminology
 class meeting
@@ -65,13 +64,14 @@ unexcused absence
 : An absence that is not excused.
 
 original work
-: ...
+: TBD
 
 closed book
-: ...
+: The book and any accompanying materials MUST NOT be used.
 
 open note
-: ...
+: A single 8.5" x 11" piece of paper, front and back with nothing attached MAY
+  be used.
 
 ## Course policies
 ### Attendance
@@ -112,9 +112,10 @@ or for grievous infractions, at all.
 ### Evaluation
 The final grade for the course will be based on the percentages shown below.
 
-| Assignments    | 30% |
-| In-class exams | 42% |
-| Final exam     | 28% |
+| Assignments and participation | 18% |
+| Labs                          | 22% |
+| In-class exams                | 45% |
+| Final exam                    | 15% |
 
 Grading is mainly based on the performance of each student compared to the class
 as a whole. In general, the following guidelines are followed except in certain
