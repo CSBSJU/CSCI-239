@@ -16,7 +16,7 @@ Please follow these instructions to subscribe:
 
 1. Sign up (or log in if you already have an account) at [zyBooks.com][zyBooks],
    using your csbsju.edu email domain
-1. Enter zyBook code CSB239IversonFall2018
+1. Enter zyBook code `CSB239IversonFall2018`
 1. Click Subscribe
 
 You can begin subscribing on Aug 11, 2018. The cost to subscribe is $58; any
