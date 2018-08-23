@@ -5,7 +5,7 @@ assignment_group_id: 14422
 
 ## Objectives
 
-* to become acquainted with the ghci Haskell environment
+* to become acquainted with the *ghci* Haskell environment
 * to learn to use built-in Haskell programs
 * to write a few simple Haskell programs
 
