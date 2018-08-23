@@ -91,4 +91,3 @@ multiple ways to do this, and again, test your function on several arguments.
 To exit from *ghci* type `:quit` at the prompt.
 
 Be prepared to show your pre-lab work at the beginning of lab.
-
