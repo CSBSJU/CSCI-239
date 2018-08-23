@@ -107,5 +107,5 @@ Haskell), the *orelse* operator (`||` in Haskell), and/or the `not` function.
 Your function should return a *String* (same syntax as Java Strings) with the
 appropriate result.
 
-Test your function with several data sets. (There are five different cases to
-test, depending on which two or three of the parameters are equal.)
+Test your function with several data sets (There are five different cases to
+test, depending on which two or three of the parameters are equal).
