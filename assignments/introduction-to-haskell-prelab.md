@@ -25,11 +25,6 @@ Loading package base ... linking ... done.
 Prelude>
 ```
 
-Complete the [pre-lab]() exercise for this lab before continuing below. If you
-have not already done so, open the file `SampleCode.lhs` in a text editor such
-as gedit, and run ghci in a terminal, changing to the `IntroductionToHaskell`
-directory if necessary.
-
 ## Part 1: Using the *ghci* program
 
 Type `:?` at the *ghci* prompt. You get a list of the *ghci* system commands,
