@@ -45,8 +45,8 @@ interpreted as described in [RFC 2119].
 Students are REQUIRED to have access to the zyBook, [Discrete
 Mathematics](https://learn.zybooks.com/zybook/CSB239IversonFall2018) by Irani et
 al. You SHOULD read the instructions in the [How to Use
-zyBooks](assignments/89347) assignment for directions about obtaining access
-to the book, if you do not have it already.
+zyBooks](/courses/10454/assignments/89347) assignment for directions about
+obtaining access to the book, if you do not have it already.
 
 ### Terminology
 class meeting
