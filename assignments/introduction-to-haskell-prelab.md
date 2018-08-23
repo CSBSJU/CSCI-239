@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Haskell (Pre-lab)"
+title: "Introduction to Haskell (Prelab)"
 assignment_group_id: 14422
 ---
 
