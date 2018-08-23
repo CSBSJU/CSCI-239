@@ -8,6 +8,6 @@ sudo: false
 
 # The stages of building and deploying the Canvas Workflow site.
 script:
-- canvas push   # push changes to Canvas LMS
-- canvas build  # build site
-- canvas deploy # deploy site to Canvas LMS
+- bundle exec canvas push   # push changes to Canvas LMS
+- bundle exec canvas build  # build site
+- bundle exec canvas deploy # deploy site to Canvas LMS
