@@ -11,7 +11,7 @@ assignment_group_id: 14422
 
 ## Preliminaries
 
-Complete the [pre-lab](../92107) exercise for this lab before continuing below.
+Complete the [pre-lab](./92107) exercise for this lab before continuing below.
 If you have not already done so, open the file `SampleCode.lhs` in a text editor
 such as gedit, and run ghci in a terminal, changing to the
 `IntroductionToHaskell` directory if necessary.
