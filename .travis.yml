@@ -6,6 +6,10 @@ cache: bundler
 # Route to the container-based infrastructure for a faster build.
 sudo: false
 
+# Retrieve the Gemfile from canvas-workflow repository.
+before_install:
+- wget https://raw.githubusercontent.com/jiverson002/canvas-workflow/site/files/Gemfile
+
 # The stages of building and deploying the Canvas Workflow site.
 script:
 - bundle exec canvas push   # push changes to Canvas LMS
