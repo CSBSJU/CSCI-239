@@ -1,19 +1,19 @@
 # Tell Travis the project language.
 language: ruby
 
+# Route to the container-based infrastructure for a faster build.
+sudo: false
+
 # Tell Travis to cache bundler dependencies
 cache:
   directories:
   - ${BUNDLE_PATH:-vendor/bundle}
 
-# Route to the container-based infrastructure for a faster build.
-sudo: false
-
 # Retrieve the Gemfile from canvas-workflow repository.
 before_install:
 - wget https://raw.githubusercontent.com/jiverson002/canvas-workflow/site/files/Gemfile
 
-# Customize bundle arguments
+# Customize bundle arguments for caching
 bundler_args: --path ${BUNDLE_PATH:-vendor/bundle}
 
 # The stages of building and deploying the Canvas Workflow site.
