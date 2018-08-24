@@ -1,5 +1,6 @@
 # Tell Travis the project language.
 language: ruby
+
 # Tell Travis to cache bundler dependencies
 cache:
   directories:
@@ -11,6 +12,9 @@ sudo: false
 # Retrieve the Gemfile from canvas-workflow repository.
 before_install:
 - wget https://raw.githubusercontent.com/jiverson002/canvas-workflow/site/files/Gemfile
+
+# Customize bundle arguments
+bundler_args: --path ${BUNDLE_PATH:-vendor/bundle}
 
 # The stages of building and deploying the Canvas Workflow site.
 script:
