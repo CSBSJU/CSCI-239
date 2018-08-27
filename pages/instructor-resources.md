@@ -8,8 +8,8 @@ title: "Instructor resources"
 | **Instructors(s):** | Jeremy Iverson (<jiverson002@csbsju.edu>). PENGL 213, Ph: (320) 363-3083          |
 |                     | Homepage: <http://www.users.csbsju.edu/~jiverson002>                              |
 |                     | Office Hours:                                                                     |
-|                     | &nbsp;&nbsp;&nbsp;M 3:00 pm - 4:00 pm                                             |
-|                     | &nbsp;&nbsp;&nbsp;T 11:00 am - 12:00 pm                                           |
+|                     | &nbsp;&nbsp;&nbsp;M 12:30 pm - 1:30 pm                                            |
+|                     | &nbsp;&nbsp;&nbsp;R 11:00 am - 12:00 pm                                           |
 |---------------------+-----------------------------------------------------------------------------------|
 |                     |                                                                                   |
 |---------------------+-----------------------------------------------------------------------------------|
