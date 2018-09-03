@@ -48,11 +48,11 @@ the *ghci* prompt to change into your `CS239/IntroductionToHaskell` directory.
 (If you were already in this directory when you ran *ghci*, you can skip this
 command.) The directory should contain the file `SampleCode.lhs`. You can verify
 this by using the `:!` command to run the shell command `ls` thus: `:! ls`.
-Similarly, `:! pwd` will tell you what directory you’r currently in.
+Similarly, `:! pwd` will tell you what directory you're currently in.
 
 Open the file `SampleCode.lhs` in a text editor such as *gedit* so you can view
 the Haskell code. Next, load the file into *ghci* using the command `:load
-Lab01.SampleCode.lhs`.
+SampleCode.lhs`.
 
 You should see a couple of lines of compiler messages followed by a new *ghci*
 prompt: `*Main>`.

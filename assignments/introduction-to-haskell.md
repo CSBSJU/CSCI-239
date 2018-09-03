@@ -20,17 +20,17 @@ such as gedit, and run ghci in a terminal, changing to the
 
 Consider computing one of the roots of a quadratic equation of the form:
 
-* ax2 + bx + c = 0
+* *ax*<sup>2</sup> + *bx* + *c* = 0
 
 One of the roots has the value:
 
-* (-b+√(b^2-4ac))/2a
+* (-*b* + √(*b*<sup>2</sup> - 4*ac*)) / 2*a*
 
 In the text file, put Haskell code to bind the identifiers *a* = 1, *b* = -5,
 *c* = 6, and *r* to a Haskell expression for the indicated root. Load or reload
 the file into *ghci* and check the value of *r*; it should be 3.0. Now try the
 same thing for some other values of *a*, *b*, and *c* by changing the values of
-the variables in the file and reloading it. What happens if b<sup>2</sup> −
+the variables in the file and reloading it. What happens if *b*<sup>2</sup> −
 4*ac* is negative?
 
 As you probably discovered, entering expressions by hand is not much fun,
@@ -95,7 +95,7 @@ from −5.0 to 5.0. Use the same method as for the `poly1` function to find a
 root. (In this case, you should be able to find an exact root in only a few
 steps.)
 
-### Function 3: A function that users a user defined data type
+### Function 3: A function that uses a conditional structure
 
 Define a Haskell function `triangle` that takes thee parameters *a*, *b*, and
 *c* and computes whether a triangle with those side lengths is *equilateral*
