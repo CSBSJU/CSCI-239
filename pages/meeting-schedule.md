@@ -63,7 +63,7 @@ title: "Meeting schedule"
       <th></th>
     </tr>
     <tr>
-      <td></td>
+      <td><a href="{% file lectures/02/slides.pptx %}">{% icon ms-ppt %}</a></td>
       <td>Predicate logic</td>
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91458">{% icon assignment %}</a></td>
     </tr>
