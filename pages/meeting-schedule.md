@@ -20,11 +20,12 @@ title: "Meeting schedule"
     </tr>
   </tbody>
 </table>
+
 <table class="ic-Table ic-Table--condensed ic-Table--hover-row" style="margin-top:20px">
   <thead>
     <tr class="ic-Table__row--bg-neutral">
       <th style="width:100px">Week 1</th>
-      <th style="width:40px"></th>
+      <th style="width:50px"></th>
       <th style="width:50%">Topic</th>
       <th>Reading</th>
     </tr>
@@ -47,6 +48,7 @@ title: "Meeting schedule"
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91454">{% icon assignment %}</a></td>
     </tr>
   </tbody>
+
   <thead>
     <tr class="ic-Table__row--bg-neutral">
       <th>Week 2</th>
@@ -58,7 +60,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">03-Sep</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/92107">{% icon edit %}</a></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/92107">{% icon edit %}</a> <a href="https://csbsju.instructure.com/courses/10454/assignments/91535">{% icon edit %}</a> <a href="{% file labs/01/StarterCode.lhs %}">{% icon zipped %}</a></td>
       <td>Lab 01</td>
       <th></th>
     </tr>
@@ -73,6 +75,7 @@ title: "Meeting schedule"
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91466">{% icon assignment %}</a></td>
     </tr>
   </tbody>
+
   <thead>
     <tr class="ic-Table__row--bg-neutral">
       <th>Week 3</th>
@@ -84,7 +87,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">10-Sep</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/96377">{% icon edit %}</a> <a href="https://csbsju.instructure.com/courses/10454/assignments/96378">{% icon edit %}</a> <a href="{% file labs/02/StarterCode.lhs %}">{% icon zipped %}</a></td>
       <td>Lab 02</td>
       <td></td>
     </tr>
@@ -99,6 +102,7 @@ title: "Meeting schedule"
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91468">{% icon assignment %}</a></td>
     </tr>
   </tbody>
+
   <thead>
     <tr class="ic-Table__row--bg-neutral">
       <th>Week 4</th>
