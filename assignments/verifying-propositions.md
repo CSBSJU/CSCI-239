@@ -44,7 +44,7 @@ are different for any function, determine why, revising the table and/or
 function until they agree. Does this agreement guarantee that you have done the
 table and function correctly? Why or why not?
 
-## Part 2: Adding → and ↔ to the mix
+## Part 2: Adding &rarr; and &harr; to the mix
 Haskell does not have built-in operators or functions for the implies (&rarr;)
 or if and only if (&harr;) operations. Determine propositional expressions
 equivalent to these two logical operations, using only the &and;, &or;, and
@@ -59,7 +59,7 @@ Now write a Haskell function that implements the expression (p &rarr; q) &harr;
 functions, not operators, you'll need to either use the function name before its
 two parameters or enclose it in single back-quote characters (\`) to convert it
 into an operator. For example, the expression p &rarr; q could be written as
-`implies p q` or as `p \` implies\` q` . Test the function using *mapTruth4*,
+`implies p q` or as ``p `implies` q`` . Test the function using *mapTruth4*,
 and compare the results to your truth table. Again, if the results don't agree,
 determine why, and make any necessary correction to your truth table and/or
 function.
