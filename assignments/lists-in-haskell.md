@@ -217,8 +217,8 @@ Now let's count the number of times a particular element occurs in a list:
 ```
 This is a function of two parameters; the first is the element to be counted,
 and the second is the list to be processed. Notice that the recursive case has
-two subcases, depending on whether x is the element we're trying to count. You
-might be tempted to get a little more pattern matching bang for the buck by
+two sub-cases, depending on whether `x` is the element we're trying to count.
+You might be tempted to get a little more pattern matching bang for the buck by
 writing the following:
 
 ```lhs
