@@ -120,7 +120,7 @@ With list comprehensions, we can also add logical qualifiers that limit the
 values we take from the source list. For example, suppose we want all the
 numbers from one to thirty that are not divisible by three. ``[ n | n <- [ 1 ..
 30 ], n `mod` 3 /= 0 ]`` gives the desired result. There can even be more than
-one qualifier, so ``[n | n <- [ 1 .. 50 ], n `mod` 2 /= 0, n `mod` 3 /= 0 ]``
+one qualifier, so ``[ n | n <- [ 1 .. 50 ], n `mod` 2 /= 0, n `mod` 3 /= 0 ]``
 gives the numbers from one to fifty that are neither divisible by two nor by
 three. (This is a good start on a list of prime numbers.) Specify the following
 lists and show the results:
