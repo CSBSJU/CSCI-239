@@ -93,13 +93,13 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td><a href="{% file lectures/05/slides.pptx %}">{% icon ms-ppt %}</a></td>
-      <td>Introduction to proofs</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91467">{% icon assignment %}</a></td>
+      <td>Practice</td>
+      <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>Types of proofs</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91468">{% icon assignment %}</a></td>
+      <td>Introduction to proofs</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91467">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -114,19 +114,22 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">17-Sep</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91537">{% icon edit %}</a> <a href="{% file labs/03/StarterCode.lhs %}">{% icon zipped %}</a></td>
       <td>Lab 03</td>
       <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Types of proofs</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91468">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
       <td>Sets and their operations</td>
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91533">{% icon assignment %}</a></td>
     </tr>
-    <tr>
-      <td></td>
-      <td>Reasoning about sets</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91534">{% icon assignment %}</a></td>
-    </tr>
   </tbody>
 </table>
+
+<!--      <td>Reasoning about sets</td> -->
+<!--      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91534">{% icon assignment %}</a></td> -->
