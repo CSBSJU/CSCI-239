@@ -129,7 +129,112 @@ title: "Meeting schedule"
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91533">{% icon assignment %}</a></td>
     </tr>
   </tbody>
-</table>
 
-<!--      <td>Reasoning about sets</td> -->
-<!--      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91534">{% icon assignment %}</a></td> -->
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 5</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">24-Sep</td>
+      <td></td>
+      <td>Lab 04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/pages/exam-1-study-guide">Exam 1</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Reasoning about sets</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/91534">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 6</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">01-Oct</td>
+      <td></td>
+      <td>Lab 05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Functions and their properties</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Reasoning about functions</td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 7</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">08-Oct</td>
+      <td></td>
+      <td>Lab 06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Relations and digraphs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Operations on realtions</td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 8</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">08-Oct</td>
+      <td></td>
+      <td><em>NO LAB</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><em>NO CLASS</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Exam 2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
