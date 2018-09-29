@@ -141,7 +141,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">24-Sep</td>
-      <td></td>
+      <td><a href="{% file labs/04/Lab.pdf %}">{% icon edit %}</a> <a href="{% file labs/04/StarterCode.lhs %}">{% icon zipped %}</a></td>
       <td>Lab 04</td>
       <td></td>
     </tr>
@@ -168,19 +168,19 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">01-Oct</td>
-      <td></td>
+      <td><a href="{% file labs/05/Lab.pdf %}">{% icon edit %}</a> <a href="{% file labs/05/Code.zip %}">{% icon zipped %}</a></td>
       <td>Lab 05</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
       <td>Functions and their properties</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98426">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
       <td>Reasoning about functions</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98427">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -195,19 +195,19 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">08-Oct</td>
-      <td></td>
+      <td><a href="{% file labs/06/Lab.pdf %}">{% icon edit %}</a></td>
       <td>Lab 06</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
       <td>Relations and digraphs</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98428">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
       <td>Operations on realtions</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98429">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
