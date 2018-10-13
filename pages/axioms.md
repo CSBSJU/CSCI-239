@@ -15,6 +15,18 @@ Rational number
 Irrational number
 : An irrational number is a real number that is not rational.
 
+Natural number
+: A natural number is an integer greater than or equal to 0.
+
 Absolute value
 : The absolute value of a real number x is defined to be \|x\| = -x if x &le; 0,
   and \|x\| = x if x &ge; 0.
+
+Positive number
+: A number x is positive if $x &ge; 0.
+
+Negative number
+: A number x is negative if $x &le; 0.
+
+Non-negative number
+: A number x is non-negative if $x &geq; 0.
