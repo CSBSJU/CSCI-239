@@ -168,8 +168,8 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">01-Oct</td>
-      <td><a href="{% file labs/05/Lab.pdf %}">{% icon edit %}</a> <a href="{% file labs/05/Code.zip %}">{% icon zipped %}</a></td>
-      <td>Lab 05</td>
+      <td></td>
+      <td><em>NO LAB</em></td>
       <td></td>
     </tr>
     <tr>
@@ -222,8 +222,8 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">15-Oct</td>
-      <td><a href="{% file labs/06/Lab.pdf %}">{% icon edit %}</a></td>
-      <td>Lab 06</td>
+      <td><a href="{% file labs/05/Lab.pdf %}">{% icon edit %}</a> <a href="{% file labs/05/Code.zip %}">{% icon zipped %}</a></td>
+      <td>Lab 05</td>
       <td></td>
     </tr>
     <tr>
@@ -234,6 +234,223 @@ title: "Meeting schedule"
     <tr>
       <td></td>
       <td><a href="https://csbsju.instructure.com/courses/10454/pages/exam-2-study-guide">Exam 2</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 9</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">22-Oct</td>
+      <td><a href="{% file labs/06/Lab.pdf %}">{% icon edit %}</a></td>
+      <td>Lab 06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Growth of functions and analysis of algorithms</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99472">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Recurrence relations</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99473">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 10</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">29-Oct</td>
+      <td></td>
+      <td>Lab 07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mathematical induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99474">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Strong induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99475">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 11</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">05-Nov</td>
+      <td></td>
+      <td>Lab 08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Recursive definitions and structural induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99476">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Integer properties</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99477">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 12</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">12-Nov</td>
+      <td></td>
+      <td>Lab 09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Exam 3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Introduction to counting</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99478">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 13</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">19-Nov</td>
+      <td></td>
+      <td><em>TBD</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Permutations and counting</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99479">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><em>NO CLASS</em></td>
+      <td></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 14</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">26-Nov</td>
+      <td></td>
+      <td>Lab 10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Introduction to discrete probability</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99480">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bayes' theorem and expectations</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99481">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 15</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">03-Dec</td>
+      <td></td>
+      <td>Lab 11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Graphs</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99482">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Trees</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99483">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 16</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="vertical-align:top">10-Dec</td>
+      <td></td>
+      <td><em>TBD</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Course review</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14-Dec</td>
+      <td></td>
+      <td>Final exam</td>
       <td></td>
     </tr>
   </tbody>
