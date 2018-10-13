@@ -195,19 +195,19 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">08-Oct</td>
-      <td><a href="{% file labs/06/Lab.pdf %}">{% icon edit %}</a></td>
-      <td>Lab 06</td>
+      <td></td>
+      <td><em>NO LAB</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><em>NO CLASS</em></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
       <td>Relations and digraphs</td>
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98428">{% icon assignment %}</a></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Operations on realtions</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98429">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -221,19 +221,19 @@ title: "Meeting schedule"
   </thead>
   <tbody>
     <tr>
-      <td rowspan="0" style="vertical-align:top">08-Oct</td>
-      <td></td>
-      <td><em>NO LAB</em></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><em>NO CLASS</em></td>
+      <td rowspan="0" style="vertical-align:top">15-Oct</td>
+      <td><a href="{% file labs/06/Lab.pdf %}">{% icon edit %}</a></td>
+      <td>Lab 06</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>Exam 2</td>
+      <td>Operations on realtions</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98429">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/pages/exam-2-study-guide">Exam 2</a></td>
       <td></td>
     </tr>
   </tbody>
