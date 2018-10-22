@@ -228,7 +228,7 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td></td>
-      <td>Operations on realtions</td>
+      <td>Operations on relations</td>
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/98429">{% icon assignment %}</a></td>
     </tr>
     <tr>
@@ -255,13 +255,13 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td></td>
-      <td>Growth of functions and analysis of algorithms</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99472">{% icon assignment %}</a></td>
+      <td>More operations on relations</td>
+      <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>Recurrence relations</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99473">{% icon assignment %}</a></td>
+      <td>Growth of functions and analysis of algorithms</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99472">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -282,13 +282,13 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td></td>
-      <td>Mathematical induction</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99474">{% icon assignment %}</a></td>
+      <td>Recurrence relations</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99473">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
-      <td>Strong induction</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99475">{% icon assignment %}</a></td>
+      <td>Mathematical induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99474">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -309,13 +309,13 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td></td>
-      <td>Recursive definitions and structural induction</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99476">{% icon assignment %}</a></td>
+      <td>Strong induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99475">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
-      <td>Integer properties</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99477">{% icon assignment %}</a></td>
+      <td>Recursive definitions and structural induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99476">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -341,8 +341,8 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td></td>
-      <td>Introduction to counting</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99478">{% icon assignment %}</a></td>
+      <td>Integer properties</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99477">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -358,8 +358,8 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="0" style="vertical-align:top">19-Nov</td>
       <td></td>
-      <td><em>TBD</em></td>
-      <td></td>
+      <td>Introduction to counting</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99478">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>

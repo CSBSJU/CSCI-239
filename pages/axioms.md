@@ -23,10 +23,10 @@ Absolute value
   and \|x\| = x if x &ge; 0.
 
 Positive number
-: A number x is positive if $x &ge; 0.
+: A number x is positive if x &gt; 0.
 
 Negative number
-: A number x is negative if $x &le; 0.
+: A number x is negative if x &lt; 0.
 
 Non-negative number
-: A number x is non-negative if $x &geq; 0.
+: A number x is non-negative if x &ge; 0.

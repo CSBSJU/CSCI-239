@@ -28,7 +28,7 @@ title: "Exam 2 study guide"
     * union (A &cup; B)
     * intersection (A &cap; B)
     * difference (A - B)
-    * symmetric difference (A &xor; B)
+    * symmetric difference (A &oplus; B)
     * complement (<span style="text-decoration: overline">A</span>)
     * Cartesian product (A &times; B)
       * ordered tuples and entries
