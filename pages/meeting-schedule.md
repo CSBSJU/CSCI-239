@@ -277,18 +277,18 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="0" style="vertical-align:top">29-Oct</td>
       <td></td>
-      <td>Lab 07</td>
+      <td><em>NO LAB</em></td>
       <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Analysis of algorithms</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99472">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
       <td>Recurrence relations</td>
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99473">{% icon assignment %}</a></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Mathematical induction</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99474">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -304,18 +304,18 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="0" style="vertical-align:top">05-Nov</td>
       <td></td>
-      <td>Lab 08</td>
+      <td><em>NO LAB</em></td>
       <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mathematical induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99474">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
       <td>Strong induction</td>
       <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99475">{% icon assignment %}</a></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Recursive definitions and structural induction</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99476">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -331,18 +331,18 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="0" style="vertical-align:top">12-Nov</td>
       <td></td>
-      <td>Lab 09</td>
+      <td>Lab 07</td>
       <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Recursive definitions and structural induction</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99476">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
       <td>Exam 3</td>
       <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Integer properties</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99477">{% icon assignment %}</a></td>
     </tr>
   </tbody>
 
@@ -358,13 +358,13 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="0" style="vertical-align:top">19-Nov</td>
       <td></td>
-      <td>Introduction to counting</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99478">{% icon assignment %}</a></td>
+      <td>Lab 08</td>
+      <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>Permutations and counting</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99479">{% icon assignment %}</a></td>
+      <td>Integer properties</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99477">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td></td>
@@ -385,6 +385,33 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="0" style="vertical-align:top">26-Nov</td>
       <td></td>
+      <td>Lab 09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Introduction to counting</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99478">{% icon assignment %}</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Permutations and counting</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99479">{% icon assignment %}</a></td>
+    </tr>
+  </tbody>
+
+  <thead>
+    <tr class="ic-Table__row--bg-neutral">
+      <th>Week 15</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="0" style="vertical-align:top">03-Dec</td>
+      <td></td>
       <td>Lab 10</td>
       <td></td>
     </tr>
@@ -402,33 +429,6 @@ title: "Meeting schedule"
 
   <thead>
     <tr class="ic-Table__row--bg-neutral">
-      <th>Week 15</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="0" style="vertical-align:top">03-Dec</td>
-      <td></td>
-      <td>Lab 11</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Graphs</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99482">{% icon assignment %}</a></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Trees</td>
-      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99483">{% icon assignment %}</a></td>
-    </tr>
-  </tbody>
-
-  <thead>
-    <tr class="ic-Table__row--bg-neutral">
       <th>Week 16</th>
       <th></th>
       <th></th>
@@ -439,13 +439,13 @@ title: "Meeting schedule"
     <tr>
       <td rowspan="2" style="vertical-align:top">10-Dec</td>
       <td></td>
-      <td><em>TBD</em></td>
+      <td><em>NO LAB</em></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>Course review</td>
-      <td></td>
+      <td>Graphs and trees</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/99482">{% icon assignment %}</a> <a href="https://csbsju.instructure.com/courses/10454/assignments/99483">{% icon assignment %}</a></td>
     </tr>
     <tr>
       <td>14-Dec</td>
