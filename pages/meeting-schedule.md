@@ -330,7 +330,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">12-Nov</td>
-      <td></td>
+      <td><a href="{% file labs/07/Lab.pdf %}">{% icon edit %}</a></td>
       <td>Lab 07</td>
       <td></td>
     </tr>
@@ -341,7 +341,7 @@ title: "Meeting schedule"
     </tr>
     <tr>
       <td></td>
-      <td>Exam 3</td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/pages/exam-3-study-guide">Exam 3</a></td>
       <td></td>
     </tr>
   </tbody>
