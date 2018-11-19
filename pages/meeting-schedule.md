@@ -357,7 +357,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">19-Nov</td>
-      <td></td>
+      <td><a href="{% file labs/08/Lab.pdf %}">{% icon edit %}</a></td>
       <td>Lab 08</td>
       <td></td>
     </tr>
