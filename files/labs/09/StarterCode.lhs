@@ -1,6 +1,3 @@
-CSCI 239
-Lab 10 - Pattern Matching
-
 Part 2:
 
 Here is a Haskell function implementing the fibonacci function from its

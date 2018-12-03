@@ -265,4 +265,4 @@ paragraph.)
    of the first element in the list followed by the list of negatives of the
    remaining elements in the list.
 
-[StarterCode]: {file labs/03/StarterCode.lhs }
+[StarterCode]: {% file labs/03/StarterCode.lhs %}

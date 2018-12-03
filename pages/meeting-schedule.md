@@ -384,7 +384,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">26-Nov</td>
-      <td></td>
+      <td><a href="https://csbsju.instructure.com/courses/10454/assignments/102627">{% icon edit %}</a> <a href="{% file labs/09/StarterCode.lhs %}">{% icon zipped %}</a></td>
       <td>Lab 09</td>
       <td></td>
     </tr>
@@ -411,7 +411,7 @@ title: "Meeting schedule"
   <tbody>
     <tr>
       <td rowspan="0" style="vertical-align:top">03-Dec</td>
-      <td></td>
+      <td><a href="{% file labs/10/Lab.pdf %}">{% icon edit %}</a> <a href="{% file labs/10/MontyHall.lhs %}">{% icon zipped %}</a></td>
       <td>Lab 10</td>
       <td></td>
     </tr>
