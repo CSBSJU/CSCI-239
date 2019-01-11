@@ -17,4 +17,5 @@ exclude:
   - AUTHORS
   - LICENSE
   - files
+  - Gemfile*
   - vendor
