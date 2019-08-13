@@ -1,6 +1,5 @@
 ---
 title: "Pattern Matching"
-assignment_group_id: 14422
 ---
 
 In logical proofs, we use pattern matching to apply equivalence and inference

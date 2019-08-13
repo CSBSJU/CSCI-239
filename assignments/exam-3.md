@@ -1,5 +1,5 @@
 ---
-title: "Exam 3 study guide"
+title: "Exam 3"
 ---
 
 ### Relations / Digraphs

@@ -1,6 +1,5 @@
 ---
 title: "Lists in Haskell"
-assignment_group_id: 14422
 ---
 
 This lab will explore lists in Haskell, one of the language's most powerful
@@ -265,4 +264,4 @@ paragraph.)
    of the first element in the list followed by the list of negatives of the
    remaining elements in the list.
 
-[StarterCode]: {% file labs/03/StarterCode.lhs %}
+[StarterCode]: {% file labs/03/SampleCode.lhs %}

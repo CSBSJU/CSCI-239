@@ -1,6 +1,5 @@
 ---
 title: "Verfiying the truth of propositions"
-assignment_group_id: 14422
 ---
 
 This lab is an exercise using Haskell to evaluate propositional expressions.

@@ -1,5 +1,5 @@
 ---
-title: "Exam 2 study guide"
+title: "Exam 2"
 ---
 
 ### Sets

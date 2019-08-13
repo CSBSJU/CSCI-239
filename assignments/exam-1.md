@@ -1,5 +1,5 @@
 ---
-title: "Exam 1 study guide"
+title: "Exam 1"
 ---
 
 ### Logic

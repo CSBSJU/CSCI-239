@@ -1,6 +1,5 @@
 ---
 title: "Introduction to Haskell"
-assignment_group_id: 14422
 ---
 
 ## Objectives

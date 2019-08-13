@@ -1,6 +1,5 @@
 ---
 title: "Verfiying the truth of propositions (Prelab)"
-assignment_group_id: 14422
 ---
 
 The pre-lab is a pencil and paper exercise.
