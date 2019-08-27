@@ -5,15 +5,16 @@ title: "Instructor resources"
 |---------------------+-----------------------------------------------------------------------------------|
 |                     |                                                                                   |
 |---------------------+:----------------------------------------------------------------------------------|
-| **Instructors(s):** | Jeremy Iverson (<jiverson002@csbsju.edu>). PENGL 213, Ph: (320) 363-3083          |
+| **Instructors(s):** | Jeremy Iverson (<jiverson002@csbsju.edu>). MAIN 258, Ph: (320) 363-3083           |
 |                     | Homepage: <http://www.users.csbsju.edu/~jiverson002>                              |
 |                     | Office Hours:                                                                     |
 |                     | &nbsp;&nbsp;&nbsp;M 12:30 pm - 1:30 pm                                            |
-|                     | &nbsp;&nbsp;&nbsp;R 11:00 am - 12:00 pm                                           |
+|                     | &nbsp;&nbsp;&nbsp;R 1:00 pm - 2:00 pm                                             |
 |---------------------+-----------------------------------------------------------------------------------|
 |                     |                                                                                   |
 |---------------------+-----------------------------------------------------------------------------------|
-| **TA(s):**          | Ryan Strelow                                                                      |
+| **TA(s):**          | Andrew Heroux                                                                     |
+|                     | Ryan Strelow                                                                      |
 |                     | Office Hours: <https://sharepoint.csbsju.edu/computerscience/Pages/labhours.aspx> |
 |---------------------+-----------------------------------------------------------------------------------|
 

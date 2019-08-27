@@ -20,7 +20,7 @@ that can be represented by (binary) integer codes. The mathematics that deals
 with the manipulation of distinct or discrete values is called *discrete
 mathematics*.
 
-This courses approaches discrete mathematics from a point of view that is
+This course approaches discrete mathematics from a point of view that is
 practical for computer science students. We will cover logic, proof, sets,
 relations, functions, recursion and induction, counting principles, and
 probability, all with an eye to how they are used throughout computing. We will
@@ -42,9 +42,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 interpreted as described in [RFC 2119].
 
 Students are REQUIRED to have access to the zyBook, [Discrete
-Mathematics](https://learn.zybooks.com/zybook/CSB239IversonFall2018) by Irani et
-al. You SHOULD read the instructions in the [How to Use
-zyBooks](/courses/10454/assignments/89347) assignment for directions about
+Mathematics](https://learn.zybooks.com/zybook/CSBSJUCSCI239IversonFall2019) by
+Irani et al. You SHOULD read the instructions in the [How to Use
+zyBooks](/courses/12826/assignments/132304) assignment for directions about
 obtaining access to the book, if you do not have it already.
 
 ### Terminology
@@ -82,21 +82,6 @@ in a 1% reduction in the final grade for the course. Students who have more than
 three unexcused absences MAY receive a failing grade for the course. Habitual
 lateness in attending class meetings MAY be treated as unexcused absence.
 
-### Assignments
-There will be several assignments during the semester including: readings,
-in-class exercises, and take-home exercises. All of these assignments are
-intended to be collaborative in nature and you are encouraged to work together
-to understand the material and come up with solutions. However, all work
-submitted for a grade MUST be your own original work. Late assignment
-submissions MAY NOT be accepted.
-
-### Examinations
-There will be three in-class exams and one cumulative final exam. All exams are
-closed book/open note. All exam times are documented on the [Canvas calendar]
-for this course; you are responsible for keeping those times clear in your
-schedule. Students MAY be allowed to make up missed exams in the case of an
-excused absence and at the discretion of the instructor.
-
 ### Emails / Outlook meeting invitations
 I welcome emails and Outlook meeting invitations from students. However, you
 SHOULD use the following guidelines when sending either to me:
@@ -110,31 +95,6 @@ SHOULD use the following guidelines when sending either to me:
 If you fail to incorporate any of the above suggestions when corresponding with
 me via email or meeting invitations, then I MAY NOT respond in a timely manner,
 or for grievous infractions, at all.
-
-### Evaluation
-The final grade for the course will be based on the percentages shown below.
-
-| Assignments and participation | 18% |
-| Labs                          | 22% |
-| In-class exams                | 45% |
-| Final exam                    | 15% |
-
-Grading is mainly based on the performance of each student compared to the class
-as a whole. In general, the following guidelines are followed except in certain
-situations where the instructor sees a need for adjustments. A grade of F MAY be
-given in situations of frequent unexcused absences, unsuccessful completion of
-required work in a timely manner, or evident lack of understanding of core
-material as illustrated by exam scores (e.g., failing all exams MAY result in an
-F grade regardless of your total final score).
-
-| A  | &ge;94% |
-| AB | &ge;87% |
-| B  | &ge;84% |
-| BC | &ge;77% |
-| C  | &ge;74% |
-| CD | &ge;67% |
-| D  | &ge;64% |
-| F  | &lt;64% |
 
 ## Inclusivity
 Students in this class are encouraged to speak up and participate in-class and

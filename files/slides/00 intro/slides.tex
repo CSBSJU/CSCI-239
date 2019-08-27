@@ -1,0 +1,231 @@
+\documentclass[10pt,t,usenames,dvipsnames]{beamer}
+\usetheme{metropolis}           % Use metropolis theme
+
+\ifnotes
+  \hypersetup{final}
+  \usepackage{pgfpages}
+  \setbeamertemplate{note page}[plain]
+  \setbeameroption{show notes on second screen=right}
+  % the following fixes bug which causes normal text to be white instead of
+  % template default when notes are enabled
+  % (see https://tex.stackexchange.com/questions/232168/normal-text-is-invisible-when-using-beamer-with-notes-and-xelatex)
+  \makeatletter 
+  \def\beamer@framenotesbegin{% at beginning of slide
+    \usebeamercolor[fg]{normal text}
+    \gdef\beamer@noteitems{}% 
+    \gdef\beamer@notes{}% 
+  }
+  \makeatother
+\fi
+
+\usepackage{appendixnumberbeamer}
+\usepackage[scale=3]{ccicons}   % creative commons icons
+\usepackage{enumitem}
+\usepackage{verbatim}
+
+\title{CSCI 239 --- Discrete Computational Structures}
+\date{}
+\author{Jeremy Iverson}
+\institute{College of Saint Benedict \& Saint John's University}
+\begin{document}
+  \maketitle
+
+  \begin{frame}{logistics}
+    \begin{itemize}[itemsep=10pt]
+      \item instructor
+        \begin{itemize}
+          \item Jeremy Iverson (\href{mailto:jiverson002@csbsju.edu}{\nolinkurl{jiverson002@csbsju.edu}})
+          \item PENGL 258, (320) 363-3083
+          \item office hours: M 12:30--1:30pm, R 1:00--2:00pm
+        \end{itemize}
+      \item textbook
+        \begin{itemize}
+          \item \emph{Discrete Mathematics}, Irani et al., zyBook
+        \end{itemize}
+      \item website
+        \begin{itemize}
+          \item \url{https://csbsju.instructure.com/courses/12826}
+        \end{itemize}
+    \end{itemize}
+
+    \note{
+      \begin{itemize}[label=\textbf{\cdot}]
+        \item I prefer to be called $(\{\varnothing, \mbox{Dr.}, \mbox{Prof.}\}\times\{\varnothing, \mbox{Jeremy}, \mbox{Iverson}\})-\{(\varnothing,\varnothing)\}$
+        \item Encourage questions right away
+        \item Emphasize the importance of the Canvas site for finding
+          information about the class
+        \item office hours
+          \begin{itemize}
+            \item Mention outlook calendar \& my home page
+              \begin{itemize}
+                \item For those unfamiliar with Outlook meetings, then they
+                  should schedule another way and we will go over this in
+                  meeting
+              \end{itemize}
+          \end{itemize}
+        \item go through Canvas page organization quickly
+      \end{itemize}
+    }
+  \end{frame}
+
+  \begin{frame}{broad objectives}
+    \begin{itemize}[itemsep=10pt]
+      \item learn how to express ourselves precisely (read: unambiguously) using
+        the language of logic
+      \item learn the techniques necessary to establish logical certainty
+      \item learn the fundamental discrete structures useful in computer science
+        for reasoning about proposed solutions to computational problems
+    \end{itemize}
+
+    \note{
+      \begin{itemize}
+        \item logic
+        \item proofs
+        \item sets, functions, relations, growth of functions, induction,
+          sequences, counting, discrete probability
+      \end{itemize}
+    }
+  \end{frame}
+
+  \begin{frame}[standout]{activity}
+    \ifnotes
+      \usebeamercolor[white]{normal text} % override bug fix in preamble
+    \fi
+
+    \begin{itemize}[itemsep=10pt]
+      \item individually:
+        \begin{itemize}[label=$\bullet$]
+          \item complete the following sentences:
+            \begin{enumerate}[label*=\arabic*.]
+              \item This semester I hope to\dots
+              \item My best advice for a first-year student to succeed
+                academically is\dots
+            \end{enumerate}
+        \end{itemize}
+      \item in groups of three:
+        \begin{itemize}[label=$\bullet$]
+          \item introduce yourselves to each other
+          \item discuss your responses to the sentences above
+          \item figure out what I prefer to be called
+        \end{itemize}
+    \end{itemize}
+
+    \note{
+      \begin{itemize}
+        \item remind students to reflect on their hopes often during the
+          semester
+        \item remind students to take their own advice re succeeding in this and
+          any other courses that they may be in this semester.
+      \end{itemize}
+    }
+  \end{frame}
+
+  \begin{frame}{mastery-based grading}
+    \begin{alertblock}{simple idea}
+      \begin{description}
+        \item[traditional-grading] decompose assignments, quizzes, etc. into
+          points --- mastery of learning objectives is demonstrated by
+          accumulating a certain number of points.
+        \pause
+        \item[mastery-based grading] decompose assignments, quizzes, etc. into
+          their representative learning objectives --- mastery of learning
+          objectives is demonstrated by mastering learning objectives.
+      \end{description}
+    \end{alertblock}
+
+    \begin{alertblock}{profound consequences}
+      \begin{itemize}
+        \item focused is shifted from \emph{how/when} you learn to \emph{what}
+          you learn.
+      \end{itemize}
+    \end{alertblock}
+
+    \note{
+      \begin{itemize}
+        \item how points are allocated and partial points awarded will influence
+          what types of activities lead to good grades in class, not necessarily
+          what learning objectives must be mastered to get desired grade.
+          \begin{itemize}
+            \item for example, if labs are weighted more heavily, then grades
+              will generally be higher because labs are usually seen as learning
+              activities and are graded on completion.
+            \item however, if labs are weighted lower, because they are a
+              learning activity and by the nature of being graded on completion
+              do not necessarily represent mastery of learning objectives, then
+              some other assessment type must be weighted higher. If exams are
+              weighted higher, then students who struggle with exams may be
+              disadvantaged and so on.
+          \end{itemize}
+
+        \item you are no longer bound/limited by how I allocated points. a
+          particular grade is achieved by demonstrating mastery of a particular
+          number of learning objectives rather than accumulating a particular
+          number of points. this gives you much greater control over your grade
+          and does a better job reflecting how much you learned from the course.
+
+        \item standards-grading shifts focus from how mastery of learning
+          objectives are assessed (read: how we allocate points) to which
+          learning objectives are mastered. put simply, we stop looking at how /
+          when you learn and focus on what you learn.
+      \end{itemize}
+    }
+  \end{frame}
+
+  \begin{frame}{our grading system}
+    \begin{itemize}[itemsep=10pt]
+      \item our learning objectives
+      \item our grading specifications
+      \item our schedule
+    \end{itemize}
+
+    \note{
+      \begin{itemize}
+        \item Canvas, as far as I know, is not capable of tracking grades in
+          this way, so I WILL NOT be using the grading feature of Canvas. It
+          will only be used to track completion of certain activities, i.e.,
+          zyBook assignments, labs, etc.
+      \end{itemize}
+    }
+  \end{frame}
+
+  \begin{frame}[standout]
+    \ifnotes
+      \usebeamercolor[white]{normal text} % override bug fix in preamble
+    \fi
+    questions?
+  \end{frame}
+
+  \appendix
+
+  \begin{frame}[standout]{activity}
+    \ifnotes
+      \usebeamercolor[white]{normal text} % override bug fix in preamble
+    \fi
+
+    \begin{itemize}
+      \item download this slide deck and follow the instructions on the next
+        slide
+    \end{itemize}
+
+    \note{
+      \begin{itemize}
+        \item if there is still time, talk about all of the material for this
+          course being hosted on GitHub, and how they can access it
+      \end{itemize}
+    }
+  \end{frame}
+
+  \begin{frame}{next slide}
+    \begin{itemize}
+      \item find out what the reading is for Thursday
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}[c]
+    \begin{center}\ccbysa\end{center}
+
+    except where otherwise noted, this worked is licensed under
+    \href{http://creativecommons.org/licenses/by-sa/4.0/}{creative commons
+    attribution-sharealike 4.0 international license}
+  \end{frame}
+\end{document}
