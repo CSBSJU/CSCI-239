@@ -1,0 +1,123 @@
+\documentclass[]{exam}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \bigskip
+
+  \begin{questions}
+    \question Construct a truth table for the following compound propositions:
+      \medskip
+      \begin{parts}
+        \begin{minipage}{.45\textwidth}
+          \part $\lnot (p \lor q)$
+        \end{minipage}
+        \begin{minipage}{.45\textwidth}
+          \part $\lnot (p \land \lnot (q \land s))$
+        \end{minipage}
+      \end{parts}
+
+      \vspace{\stretch{1}}
+
+      \begin{solution}
+        \begin{tabular}{lllll}
+          $p$ & $q$ & $r$ & $p \lor (q \land r)$ & $(p \lor q) \land (p \lor r)$ \\
+          1 & 1 & 1 & 1                    & 1                           \\
+          1 & 1 & 0 & 1                    & 1                           \\
+          1 & 0 & 1 & 1                    & 1                           \\
+          1 & 0 & 0 & 1                    & 1                           \\
+          0 & 1 & 1 & 1                    & 1                           \\
+          0 & 1 & 0 & 0                    & 0                           \\
+          0 & 0 & 1 & 0                    & 0                           \\
+          0 & 0 & 0 & 0                    & 0                          
+        \end{tabular}
+      \end{solution}
+
+    \question
+      \begin{parts}
+        \part Using the propositions p=``I study'', q=``I will pass the
+          course'', r=``The professor accepts bribes'',  translate the following
+          into statements of propositional logic: 
+          \begin{enumerate}
+            \item If I do not study, then I will not pass the course unless the
+              professor accepts bribes.
+            \item If the professor accepts bribes, then I will pass the course
+              regardless of whether or not I study.
+            \item The professor does not accept bribes, but I study and will
+              pass the course.
+          \end{enumerate}
+
+          \vspace{\stretch{1}}
+
+          \begin{solution}
+            \begin{enumerate}
+              \item $(\lnot p \land q) \to r$
+              \item $r \rightarrow q$
+              \item $\lnot r \land p \land q$
+            \end{enumerate}
+          \end{solution}
+ 
+        \part Using the propositions p=``The night hunting is successful'',
+          q=``The moon is full'', r=``The sky is cloudless'', translate the
+          following into statements plain language:
+          \begin{enumerate}
+            \item $p \to (q \land r)$
+            \item $\lnot r \leftrightarrow q$
+            \item $(\lnot r \land p) \to q$
+          \end{enumerate}
+
+          \vspace{\stretch{1}}
+
+          \begin{solution}
+            \begin{enumerate}
+              \item For successful night hunting it is necessary that the moon
+                is full and the sky is cloudless.
+              \item The sky being cloudy is both necessary and sufficient for
+                the night hunting to be successful.
+              \item  If the sky is cloudy, then the night hunting will not be
+                successful unless the moon is full.
+            \end{enumerate}
+          \end{solution}
+      \end{parts}
+
+    \newpage
+
+    \question Using a truth table, find which of the following compound
+      propositions are always true (a tautology), regardless of the values of p
+      and q: 
+      \begin{enumerate} 
+        \item $p \rightarrow (p \lor q)$
+          \vspace{\stretch{1}}
+        \item $p \rightarrow (p \rightarrow q)$
+          \vspace{\stretch{1}}
+        \item $\lnot (p \rightarrow (p \lor q))$
+          \vspace{\stretch{1}}
+      \end{enumerate}
+
+      \begin{solution}
+        \begin{enumerate} 
+          \item Always true
+          \item Not true for $p = 1, q = 0$
+          \item Always false
+        \end{enumerate}
+      \end{solution}
+
+    \question Find the inverse, converse and contrapositive for the following
+      compound propositions, then evaluate each when $p$ is true and $q$ is
+      false:
+      \begin{enumerate} 
+        \item $p \rightarrow \lnot q$
+          \vspace{\stretch{1}}
+        \item $\lnot p \rightarrow (p \lor q)$
+          \vspace{\stretch{1}}
+        \item $p \rightarrow (p \rightarrow q)$
+          \vspace{\stretch{1}}
+      \end{enumerate}
+  \end{questions}
+\end{document}
