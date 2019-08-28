@@ -7,12 +7,14 @@ canvas:
   # precedence to include over exclude, so you can selectively include
   # files/folders that exist in excluded directories.
   exclude:
-    - files/slides
+    - files/notes
     - files/psets
+    - files/slides
   # Selectively include files/folders that have been previously excluded.
   include:
-    - files/slides/**/*-final.pdf
+    - files/notes/**/*-final.pdf
     - files/psets/**/*-final.pdf
+    - files/slides/**/*-final.pdf
 
 # Exclude the following files/folders from processing. Jekyll currently gives
 # exclude precedence over include, so list files/folders to be excluded here.
