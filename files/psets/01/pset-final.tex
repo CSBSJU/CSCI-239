@@ -17,27 +17,35 @@
       \begin{parts}
         \begin{minipage}{.45\textwidth}
           \part $\lnot (p \lor q)$
+            \begin{solution}
+              \begin{tabular}{lll}
+                $p$ & $q$ & $\lnot (p \lor q)$ \\
+                0   & 0   & 1                  \\
+                0   & 1   & 0                  \\
+                1   & 0   & 0                  \\
+                1   & 1   & 0
+              \end{tabular}
+            \end{solution}
         \end{minipage}
         \begin{minipage}{.45\textwidth}
           \part $\lnot (p \land \lnot (q \land s))$
+            \begin{solution}
+              \begin{tabular}{llll}
+                $p$ & $q$ & $s$ & $\lnot (p \land \lnot (q \land s))$ \\
+                0   & 0   & 0   & 1                                   \\
+                0   & 0   & 1   & 1                                   \\
+                0   & 1   & 0   & 1                                   \\
+                0   & 1   & 1   & 1                                   \\
+                1   & 0   & 0   & 0                                   \\
+                1   & 0   & 1   & 0                                   \\
+                1   & 1   & 0   & 0                                   \\
+                1   & 1   & 1   & 1
+              \end{tabular}
+            \end{solution}
         \end{minipage}
       \end{parts}
 
       \vspace{\stretch{1}}
-
-      \begin{solution}
-        \begin{tabular}{lllll}
-          $p$ & $q$ & $r$ & $p \lor (q \land r)$ & $(p \lor q) \land (p \lor r)$ \\
-          1 & 1 & 1 & 1                    & 1                           \\
-          1 & 1 & 0 & 1                    & 1                           \\
-          1 & 0 & 1 & 1                    & 1                           \\
-          1 & 0 & 0 & 1                    & 1                           \\
-          0 & 1 & 1 & 1                    & 1                           \\
-          0 & 1 & 0 & 0                    & 0                           \\
-          0 & 0 & 1 & 0                    & 0                           \\
-          0 & 0 & 0 & 0                    & 0                          
-        \end{tabular}
-      \end{solution}
 
     \question
       \begin{parts}
@@ -57,7 +65,7 @@
 
           \begin{solution}
             \begin{enumerate}
-              \item $(\lnot p \land q) \to r$
+              \item $(\lnot p \land q) \to r \equiv (\lnot p \land \lnot r) \rightarrow \lnot q$
               \item $r \rightarrow q$
               \item $\lnot r \land p \land q$
             \end{enumerate}
@@ -114,10 +122,25 @@
       \begin{enumerate} 
         \item $p \rightarrow \lnot q$
           \vspace{\stretch{1}}
+          \begin{solution}
+            inverse: $\lnot p \rightarrow q = T$\\
+            converse: $\lnot q \rightarrow p = T$\\
+            contrapositive: $q \rightarrow \lnot p = T$
+          \end{solution}
         \item $\lnot p \rightarrow (p \lor q)$
           \vspace{\stretch{1}}
+          \begin{solution}
+            inverse: $p \rightarrow \lnot (p \lor q) = F$\\
+            converse: $(p \lor q) \rightarrow \lnot p = F$\\
+            contrapositive: $\lnot (p \lor q) \rightarrow p = T$
+          \end{solution}
         \item $p \rightarrow (p \rightarrow q)$
           \vspace{\stretch{1}}
+          \begin{solution}
+            inverse: $\lnot p \rightarrow \lnot (p \rightarrow q) = T$\\
+            converse: $(p \rightarrow q) \rightarrow p = T$\\
+            contrapositive: $\lnot (p \rightarrow q) \rightarrow \lnot p = F$
+          \end{solution}
       \end{enumerate}
   \end{questions}
 \end{document}
