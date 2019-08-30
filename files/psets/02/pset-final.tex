@@ -1,0 +1,166 @@
+\documentclass[]{exam}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \begin{questions}
+    \question Using the laws of propositional logic, determine which of the
+      following are equivalent to $(p \land q) \rightarrow r$ and which are
+      equivalent to $(p \lor q) \rightarrow r$. Confirm your answer using
+      truth-tables.
+      % Have students split up the work, one member make the truth-tables for
+      % even letters and use laws for odd letters, one member do the opposite,
+      % and one member to coordinate and help each of the other two.
+
+      \begin{parts}
+        \part $p \rightarrow (q \rightarrow r)$
+        \part $q \rightarrow (p \rightarrow r)$
+        \part $(p \rightarrow r) \land (q \rightarrow r)$
+        \part $(p \rightarrow r) \lor (q \rightarrow r)$
+      \end{parts}
+
+      \ifprintanswers\else
+        \vspace{\stretch{1}}
+      \fi
+
+      \begin{solution}
+        \begin{enumerate}
+          \begin{minipage}{.45\textwidth}
+            \item
+              $p \rightarrow (q \rightarrow r)\\
+               \lnot p \lor (q \rightarrow r)~(conditional~identity)\\
+               \lnot p \lor \lnot q \lor r~(conditional~identity)\\
+               \lnot (p \land q) \lor r~(deMorgan's)\\
+               \equiv (p \land q) \rightarrow r~(conditional~identity)$
+          \end{minipage}
+          \begin{minipage}{.45\textwidth}
+            \item
+              $q \rightarrow (p \rightarrow r)\\
+               \lnot q \lor (p \rightarrow r)~(conditional~identity)\\
+               \lnot q \lor \lnot p \lor r~(conditional~identity)\\
+               \lnot (p \land q) \lor r~(deMorgan's)\\
+               \equiv (p \land q) \rightarrow r~(conditional~identity)$
+          \end{minipage}
+
+          \begin{minipage}{.45\textwidth}
+            \item
+              $(p \rightarrow r) \land (q \rightarrow r)\\
+               (\lnot p \lor r) \land (\lnot q \lor r)~(cond.~identity)\\
+               r \lor (\lnot p \land \lnot q)~(distributive)\\
+               r \lor \lnot(p \lor q)~(deMorgan's)\\
+               \equiv (p \lor q) \rightarrow r~(cond.~identity)$
+          \end{minipage}
+          \begin{minipage}{.45\textwidth}
+            \item
+              $(p \rightarrow r) \lor (q \rightarrow r)\\
+               (\lnot p \lor r) \lor (\lnot q \lor r)~(cond.~identity)\\
+               r \lor r \lor \lnot p \lor \lnot q~(commutative)\\
+               r \lor \lnot p \lor \lnot q~(idempotent)\\
+               r \lor \lnot(p \land q)~(deMorgan's)\\
+               \equiv (p \land q) \rightarrow r~(cond.~identity)$
+          \end{minipage}
+        \end{enumerate}
+      \end{solution}
+
+    \question Convert the following English sentences into logical formulas. You
+      may use expressions like $x=y$ or $x\neq y$ to indicate whether or not the
+      variables $x$ and $y$ denote different people. The domain of discourse is
+      all people. Let the predicate $H(x)$ mean that ``$x$ is happy,'' and let
+      the predicate $L(x,y)$ mean that ``$x$ loves $y$.''
+
+      \begin{parts}
+        \part At least one person is happy.
+        \part No one is happy.
+        \part At least one person is unhappy.
+        \part Exactly one person is happy.
+        \part Not everyone loves someone else.
+        \part Everyone loves someone else.
+      \end{parts}
+
+      \ifprintanswers\else
+        \vspace{\stretch{1}}
+      \fi
+
+      \begin{solution}
+        \begin{enumerate}
+          \begin{minipage}{.45\textwidth}
+            \item $\exists x H(x)$
+            \item $\lnot \exists x H(x) \equiv \forall x (\lnot H(x))$
+            \item $\exists x (\lnot H(x))$
+            \item $\exists x (H(x) \wedge \forall y (H(y) \rightarrow x = y))$
+          \end{minipage}
+          \begin{minipage}{.45\textwidth}
+            \item $\exists x \forall y(\lnot L(x,y))\\
+              \lnot(\forall x \exists y L(x,y))\\
+              \exists x \lnot (\exists y L(x,y))$
+            \item $\lnot (\exists x \forall y(\lnot L(x,y))) \equiv \forall x
+              \exists y L(x,y)\\
+              \lnot(\lnot(\forall x \exists y L(x,y))) \equiv \forall x \exists
+              y L(x,y)\\
+              \lnot(\exists x \lnot (\exists y L(x,y))) \equiv \forall x \exists
+              y L(x,y)$
+          \end{minipage}
+        \end{enumerate}
+      \end{solution}
+
+    \newpage
+
+    \question Let the domain of discourse be all members of the class and let
+      $L(x,y)$ be the predicate ``$x$ likes $y$.'' Translate the following
+      into plain language:
+
+      \begin{parts}
+        \part $\forall x \exists y (L(x,y) \land x \neq y)$
+        \part $\exists x \lnot \exists y (L(x,y) \lor L(y,x))$
+        \part $\exists x \exists y \exists z \exists w (L(x,w) \land L(y,w)
+          \land L(z,w) \land x \neq y \neq z)$
+      \end{parts}
+
+      \ifprintanswers\else
+        \vspace{\stretch{1}}
+      \fi
+
+      \begin{solution}
+        \begin{enumerate}
+          \item Everyone in the class likes some other member of the class.
+          \item There is a person who doesn't like anyone and who nobody likes.
+          \item At least three different people like the same person.
+        \end{enumerate}
+      \end{solution}
+
+    \question A certain cabal (\emph{cabal: a secret political clique or
+      faction}) within the CS department is plotting to make the final exam
+      \emph{ridiculously hard}. The only way to stop their evil plan is to
+      determine exactly who is in the cabal. The department includes Donald,
+      Grace, Linus, Alan, Ada and Edsger. The cabal is a subset of these six. A
+      membership roster has been found and appears below, but it is deviously
+      encrypted in logic notation. The predicate $cabal$ indicates who is in the
+      cabal; that is, $cabal(x)$ is true if and only if $x$ is a member of the
+      cabal. Use the following information to gather who is in the cabal. 
+
+      \begin{enumerate}
+        \item $\exists x \exists y \exists z (x \lnot y \land x \neq z \land y
+          \neq z \land cabal(x) \land cabal(y) \land cabal(z))$
+        \item $\exists x (\lnot cabal(x))$
+        \item $cabal(Edsger) \rightarrow \forall x (cabal(x))$
+        \item $\lnot (cabal(Donald) \land cabal(Alan)) \land (cabal(Donald) \lor
+          cabal(Alan))$
+        \item $cabal(Alan) \rightarrow cabal(Donald)$
+        \item $(cabal(Ada) \lor cabal(Linus)) \rightarrow \lnot(cabal(Grace))$
+      \end{enumerate}
+
+      \ifprintanswers\else
+        \vspace{\stretch{1}}
+      \fi
+
+      \begin{solution}
+        Donald, Ada, and Linus are in the cabal
+      \end{solution}
+  \end{questions}
+\end{document}
