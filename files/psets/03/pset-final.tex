@@ -1,0 +1,173 @@
+\documentclass[]{exam}
+
+\usepackage{bm}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+
+\extrawidth{.5in}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \begin{questions}
+    \question
+
+      \begin{parts}
+        \part Using a truth table, show that $p \oplus q \equiv \lnot (p \land
+          q) \land (p \lor q)$.
+          \label{part:truth}
+
+          \begin{solution}
+            \begin{tabular}{l|l|l|l}
+              $p$ & $q$ & $p \oplus q$ & $\lnot (p \land q) \land (p \lor q)$ \\
+              1   & 1   & 0            & 0 \\
+              1   & 0   & 1            & 1 \\
+              0   & 1   & 1            & 1 \\
+              0   & 0   & 0            & 0
+            \end{tabular}
+          \end{solution}
+
+          \vspace{\stretch{1}}
+
+        \part Using the laws of propositional logic and the result from Part
+          (\ref{part:truth}), show that $p \oplus q \equiv
+          (p \land \lnot q) \lor (\lnot p \land q)$.
+
+          \begin{solution}~\\
+            \begin{array}[t]{lclr}
+              p \oplus q & \equiv & \lnot (p \land q) \land (p \lor q) &
+              \mbox{(Part (\ref{part:truth}))}\\
+                  & \equiv & (\lnot p \lor \lnot q) \land (p \lor q) & \mbox{(De
+                  Morgan's)}\\
+                  & \equiv & (\mbox{T} \land (\lnot p \lor \lnot q)) \land
+                  (\mbox{T} \land (p \lor q)) & \mbox{(identity)}\\
+                  & \equiv & ((p \lor \lnot p) \land (\lnot p \lor \lnot q))
+                  \land ((q \lor \lnot q) \land (p \lor q)) &
+                  \mbox{(complement)}\\
+                  & \equiv & (\lnot p \lor (p \land \lnot q)) \land (q \lor
+                  (p \land \lnot q)) & \mbox{(distributive)}\\
+                  & \equiv & (p \land \lnot q) \lor (\lnot p \land q) &
+                  \mbox{(distributive)}
+            \end{array}
+          \end{solution}
+
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \question A certain cabal (\emph{cabal: a secret political clique or
+      faction}) within the CS department is plotting to make the final exam
+      \emph{ridiculously hard}. The only way to stop their evil plan is to
+      determine exactly who is in the cabal. The department includes Donald,
+      Grace, Linus, Alan, Ada and Edsger. The cabal is a subset of these six. A
+      membership roster has been found and appears below, but it is deviously
+      encrypted in logic notation. The predicate $cabal$ indicates who is in the
+      cabal; that is, $cabal(x)$ is true if and only if $x$ is a member of the
+      cabal. Use the following information to gather who is in the cabal. 
+
+      \begin{enumerate}
+        \item $\exists x \exists y \exists z (x \neq y \land x \neq z \land y
+          \neq z \land cabal(x) \land cabal(y) \land cabal(z))$
+        \item $\exists x (\lnot cabal(x))$
+        \item $cabal(Edsger) \rightarrow \forall x (cabal(x))$
+        \item $\lnot (cabal(Donald) \land cabal(Alan)) \land (cabal(Donald) \lor
+          cabal(Alan))$
+        \item $cabal(Alan) \rightarrow cabal(Donald)$
+        \item $(cabal(Ada) \lor cabal(Linus)) \rightarrow \lnot cabal(Grace)$
+      \end{enumerate}
+
+      %\def\arraystretch{1.4}
+      %\begin{array}[t]{clr}
+      %  \mbox{H.} & \lnot (cabal(Donald) \land cabal(Alan)) \land
+      %    (cabal(Donald) \lor cabal(Alan)) & \mbox{(hypothesis 4)}\\
+      %  \mbox{I.} & cabal(Donald) \oplus cabal(Alan) & \mbox{(Question 1,
+      %    part (a) H)}\\
+      %  \mbox{J.} & (cabal(Donald) \land \lnot cabal(Alan)) \lor (\lnot
+      %    cabal(Donald) \land cabal(Alan)) & \mbox{(Question 1, part (b)
+      %    I)}\\
+      %  \mbox{K.} & (cabal(Donald) \land \lnot cabal(Alan)) &
+      %    \mbox{(simplification J)}\\
+      %  \mbox{L.} & \lnot (cabal(Donald) \land \lnot cabal(Alan))
+      %    \rightarrow (\lnot cabal(Donald) \land cabal(Alan))&
+      %    \mbox{(conditional identity J)}\\
+      %  \mbox{M.} & \lnot cabal(Donald) \land cabal(Alan) & \mbox{(modus
+      %    tollens K \& L)}\\
+      %  \mbox{N.} & \bm{\lnot cabal(Donald)} & \mbox{(simplification M)}\\
+      %  \mbox{O.} & \bm{cabal(Alan)} & \mbox{(simplification M)}\\
+      %\end{array}
+
+      \begin{EnvFullwidth}
+          \begin{solution}~\\
+            \def\arraystretch{1.4}
+            \begin{array}[t]{clr}
+              \mbox{A.} & \exists x (\lnot cabal(x)) & \mbox{(hypothesis 2)}\\
+              \mbox{B.} & c \mbox{ is a particular element} \land \lnot cabal(c)
+                & \mbox{(existential instantiation A)}\\
+              \mbox{C.} & c \mbox{ is a particular element} &
+                \mbox{(simplification B)}\\
+              \mbox{D.} & \forall x (cabal(Edsger) \rightarrow cabal(x)) &
+                \mbox{(hypothesis 3)}\\
+              \mbox{E.} & \lnot cabal(c) & \mbox{(simplification B)}\\
+              \mbox{F.} & cabal(Edsger) \rightarrow cabal(c) & \mbox{(universal
+                instantiation C \& D)}\\
+              \mbox{G.} & \bm{\lnot cabal(Edsger)} & \mbox{(modus tollens E \&
+                F)}\\
+
+              \mbox{H.} & \lnot (cabal(Donald) \land cabal(Alan)) \land
+                (cabal(Donald) \lor cabal(Alan)) & \mbox{(hypothesis 4)}\\
+              \mbox{I.} & cabal(Donald) \oplus cabal(Alan) & \mbox{(Question 1,
+                part (a) H)}\\
+              \mbox{J.} & (cabal(Donald) \land \lnot cabal(Alan)) \lor (\lnot
+                cabal(Donald) \land cabal(Alan)) & \mbox{(Question 1, part (b)
+                I)}\\
+              \mbox{K.} & cabal(Alan) \rightarrow cabal(Donald) &
+                \mbox{(hypothesis 5)}\\
+              \mbox{L.} & \lnot cabal(Alan) \lor cabal(Donald) &
+                \mbox{(conditional identity K)}\\
+              \mbox{M.} & cabal(Donald) \land \lnot cabal(Alan) &
+                \mbox{(disjunctive syllogism J \& L)}\\
+              \mbox{N.} & \bm{cabal(Donald)} & \mbox{(simplification M)}\\
+              \mbox{O.} & \bm{\lnot cabal(Alan)} & \mbox{(simplification M)}\\
+              \color{red}{\mbox{P.}} & \color{red}{(cabal(Ada) \land
+                cabal(Linus))~\lor~(cabal(Ada) \land cabal(Grace))~\lor~} & \mbox{\color{red}(hypothesis 1 \& G \& N
+                \& O~}\\
+                        & \color{red}{~~~~(cabal(Linus) \land cabal(Grace))} &
+                        \color{red}{\mbox{and a lot of hard work)}}\\
+              \mbox{Q.} & (cabal(Ada) \lor cabal(Linus)) \rightarrow \lnot
+                cabal(Grace) & \mbox{(hypothesis 6)}\\
+              \mbox{R.} & \lnot (cabal(Ada) \lor cabal(Linus)) \lor \lnot
+                cabal(Grace) & \mbox{(conditional identity Q)}\\
+              \mbox{S.} & (\lnot cabal(Ada) \land \lnot cabal(Linus)) \lor \lnot
+                cabal(Grace) & \mbox{(De Morgan's R)}\\
+              \mbox{T.} & (\lnot cabal(Ada) \lor \lnot cabal(Grace)) \land
+                (\lnot cabal(Linus) \lor \lnot cabal(Grace)) &
+                \mbox{(distributive S)}\\
+              \mbox{U.} & \lnot cabal(Ada) \lor \lnot cabal(Grace) &
+                \mbox{(simplification T)}\\
+              \mbox{V.} & \lnot (cabal(Ada) \land cabal(Grace)) & \mbox{(De
+                Morgan's U)}\\
+              \mbox{W.} & (cabal(Ada) \land cabal(Linus)) \lor (cabal(Linus)
+                \land cabal(Grace)) & \mbox{(disjunctive syllogism P \& V)}\\
+              \mbox{X.} & \lnot cabal(Linus) \lor \lnot cabal(Grace) &
+                \mbox{(simplification T)}\\
+              \mbox{Y.} & \lnot (cabal(Linus) \land cabal(Grace)) & \mbox{(De
+                Morgan's X)}\\
+              \mbox{Z.} & cabal(Ada) \land cabal(Linus) & \mbox{(disjunctive
+                syllogism W \& Y)}\\
+              \mbox{AA.} & \bm{cabal(Ada)} & \mbox{(simplification Z)}\\
+              \mbox{BB.} & \bm{cabal(Linus)} & \mbox{(simplification Z)}\\
+              \mbox{CC.} & \bm{\lnot cabal(Grace)} & \mbox{(disjunctive
+                syllogism U \& AA)}\\
+            \end{array}
+          \end{solution}
+      \end{EnvFullwidth}
+
+      \vspace{\stretch{1}}
+  \end{questions}
+\end{document}
