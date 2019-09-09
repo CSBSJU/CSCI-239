@@ -29,7 +29,7 @@ test4_iff = TestCase (assertEqual "function: iff"
   (mapTruth2 iff))
 
 test4_1 = TestCase (assertEqual "function: prop4_1"
-  [f, f, t, t, f, t, f, f, t, f, t, t, t, f, t, t]
+  [t, f, t, t, f, t, f, f, t, f, t, t, t, f, t, t]
   (mapTruth4 prop4_1))
 
 test5_predictSky = TestCase (assertEqual "function: predictSky"
