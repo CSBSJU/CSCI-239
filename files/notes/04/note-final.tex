@@ -1,0 +1,92 @@
+\documentclass[]{exam}
+
+\usepackage{amsthm}
+
+\renewcommand{\questionshook}{%
+  \setlength{\leftmargin}{0pt}%
+  \setlength{\labelwidth}{-\labelsep}%
+}
+\renewcommand{\questionlabel}{$\Rightarrow$}
+\renewcommand{\partlabel}{}
+\renewcommand{\subpartlabel}{}
+
+\newtheorem*{theorem}{Theorem}
+
+\pagestyle{empty}
+
+%Predicates and quantifiers
+%
+%    theorem
+%    axioms
+%        even number
+%        odd number
+%    valid argument
+%        what doesn't this say about the conclusion
+%    direct proof
+%        p -> q
+
+\begin{document}
+  \begin{center}
+    \fbox{\parbox{5.5in}{\centering Use the following spaces to record
+      any information about key topics that you find useful.}}
+  \end{center}
+
+  \bigskip
+
+  \begin{questions}
+    \question Theorem:
+      \medskip
+      \begin{parts}
+        \part Definition:
+          \vspace{\stretch{1}}
+        \part Some examples:
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \question Axiom:
+      \medskip
+      \begin{parts}
+        \part Definition:
+          \vspace{\stretch{1}}
+        \part Some examples:
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \question \emph{Refresh} --- Argument:
+      \medskip
+      \begin{parts}
+        \part Definition:
+          \vspace{\stretch{1}}
+        \part Stated as a proposition:
+          \vspace{\stretch{1}}
+          % p1 \land p2 \land \dots \land pn \rightarrow q
+        \part Valid argument:
+          \vspace{\stretch{1}}
+          % An argument whose proposition is a tautology
+      \end{parts}
+
+    \newpage
+
+    \question Direct proof:
+      \medskip
+      \begin{parts}
+        \part Used to prove theorems of the form:
+          \vspace{\stretch{1}}
+          % p -> q
+        \part Relationship between direct proofs and valid arguments:
+          \vspace{\stretch{1}}
+          % A valid argument means the condition proposition is a tautology, but
+          % establishes nothing about the truthiness of the consequence.
+        \part
+          \begin{theorem}
+            If $n$ is an even integer, then $n^2$ is even.
+          \end{theorem}
+
+          \begin{proof}
+            \mbox{}\par
+            \vspace{1in}
+            \vspace{\stretch{1}}
+          \end{proof}
+      \end{parts}
+  \end{questions}
+\end{document}
