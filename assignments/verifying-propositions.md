@@ -103,7 +103,7 @@ hypotheses that help define the problem:
 
 * It's always either day or night, but never both.
 * It's always either clear or cloudy, but never both (to keep it simple).
-* If it's cloudy, you can't see anything in the sky.
+* If it's cloudy, you cannot see anything in the sky.
 * If it's clear in the daytime, you can see the sun.
 * If it's clear at night, you can see the stars.
 * You can't see the stars during the day.
