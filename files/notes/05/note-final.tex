@@ -1,0 +1,103 @@
+\documentclass[]{exam}
+
+\usepackage{amsthm}
+
+\renewcommand{\questionshook}{%
+  \setlength{\leftmargin}{0pt}%
+  \setlength{\labelwidth}{-\labelsep}%
+}
+\renewcommand{\questionlabel}{$\Rightarrow$}
+\renewcommand{\partlabel}{}
+\renewcommand{\subpartlabel}{}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{axiom}{Axiom}
+
+\pagestyle{empty}
+
+%Predicates and quantifiers
+%
+%    theorem
+%    axioms
+%        even number
+%        odd number
+%    valid argument
+%        what doesn't this say about the conclusion
+%    direct proof
+%        p -> q
+
+\begin{document}
+  \begin{center}
+    \fbox{\parbox{5.5in}{\centering Use the following spaces to record
+      any information about key topics that you find useful.}}
+  \end{center}
+
+  \bigskip
+
+  \begin{axiom}
+    A rational number, is defined to be a number that can be expressed as
+    the ratio of two integers in which the denominator is non-zero. 
+  \end{axiom}
+
+  \begin{questions}
+    \question Proof by contrapositive:
+      \medskip
+      \begin{parts}
+        \part Defined by which logical equivalence:
+          \vspace{\stretch{1}}
+
+        \part
+          \begin{theorem}
+            The square root of a positive real number is irrational if the
+            number is irrational.
+          \end{theorem}
+
+          \bigskip
+
+          \begin{proof}
+            \mbox{}\par
+            \vspace{\baselineskip}
+            \textbf{Hypothesis}: \hrulefill
+
+            \bigskip
+
+            \textbf{Conclusion}: \hrulefill
+            \mbox{}\par
+            \vspace{\stretch{3}}
+          \end{proof}
+      \end{parts}
+
+    \newpage
+
+    \question Proof by contradiction:
+      \medskip
+      \begin{parts}
+        \part Defined by the logical equivalence: $p \rightarrow q \equiv \lnot
+          (p \rightarrow q) \rightarrow \mbox{F}$.
+
+          \medskip
+
+          Confirm this in the space below.
+          \vspace{\stretch{1}}
+
+        \part
+          \begin{theorem}
+            For all even integers $n$, $n^2$ is a multiple of 4.
+          \end{theorem}
+
+          \bigskip
+
+          \begin{proof}
+            \mbox{}\par
+            \vspace{\baselineskip}
+            \textbf{Hypothesis}: \hrulefill
+
+            \bigskip
+
+            \textbf{Conclusion}: \hrulefill
+            \mbox{}\par
+            \vspace{\stretch{3}}
+          \end{proof}
+      \end{parts}
+  \end{questions}
+\end{document}
