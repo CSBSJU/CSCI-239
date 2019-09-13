@@ -10,13 +10,6 @@ This lab is an exercise using Haskell to evaluate propositional statements.
 * to learn to use and write Haskell functions that handle functions
 * to gain experience with propositional logic
 
-You will write several Haskell functions in this lab. You must include Haskell
-type signatures for each function. (See the given code for examples of how the
-type signatures are included.) However, you don't have to figure out the type
-signature yourself; let Haskell do it for you. Implement and test each function
-without the signature, then use the :type command to get the type signature and
-add it to your function definition.
-
 ## Part 1
 
 Write the following English sentences as propositional logic statements. As you
@@ -125,7 +118,7 @@ parameters possible:
 
 1. You can see neither the sun nor any stars
 1. You can see the sun, but not any stars
-1. You can't see the sun, but you can see the stars
+1. You cannot see the sun, but you can see the stars
 1. You can see both the sun and the stars
 
 To reduce the number of parameters, make sure that you have only one variable
