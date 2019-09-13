@@ -10,7 +10,6 @@ Count the number of elements in a list.
 > count []     = 0
 > count (x:xs) = 1 + (count xs)
 
-
 Count the number of times an element occurs in a list.
 
 > elemCount :: (Eq a1, Num a) => a1 -> [a1] -> a

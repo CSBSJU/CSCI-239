@@ -1,0 +1,4 @@
+install-solutions
+solution/dist
+solution/lib
+solution/register.sh
