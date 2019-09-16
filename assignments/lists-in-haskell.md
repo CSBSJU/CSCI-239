@@ -12,17 +12,11 @@ features.
 * to write Haskell functions that build and process lists
 * to begin to use built-in Haskell list processing functions
 
-## Preliminaries
-The sample code for this lab is in the literate Haskell file in the folder for
-today's lab, [here][StarterCode]. Open the file `StarterCode.lhs` in that
-directory in gedit or another text editor to view the sample code. Put your
-Haskell code for this lab into that file; put answers to exercises in a separate
-text or Word file.
+## Part 1: Introduction to lists in Haskell
 
-## Part 1: Creating lists in Haskell
 Lists are an integral part of the Haskell language. You can specify short simple
 lists just by putting the elements of the list in square brackets, separated by
-commas. For example, [ 1, 7, 8, 2, 5, 7 ] means a list of six integers, where
+commas. For example, `[ 1, 7, 8, 2, 5, 7 ]` means a list of six integers, where
 one is the first element of the list, and seven is both the second and last
 element of the list.
 
@@ -55,10 +49,12 @@ A few things to note from these exercises: all the elements in a Haskell list
 must have a common type. `Bool` and `Num` values are distinct, so you can't mix
 them in a list. Integer literals are polymorphic, so Haskell allows them in a
 list of floating point values. The character type in Haskell is called `Char`,
-and character literals are expressed in single quotes; the String type is
+and character literals are expressed in single quotes; the `String` type is
 actually just a synonym for `[Char]`, and lists of characters are typically
-expressed as String literals enclosed in double quotes. Lists may be empty, and
+expressed as string literals enclosed in double quotes. Lists may be empty, and
 lists may be elements of lists.
+
+## Part 2: Range constructions
 
 Specifying all the elements of a list can be difficult and error-prone if the
 list is long. Haskell (like Python) provides several tools for building lists.
@@ -72,7 +68,8 @@ zero to one by 0.05 (but note the floating-point round-off error); `[ 10, 9 .. 1
 ]` is the integers from one to ten in descending order.
 
 For the following exercises, use the range construction to specify the indicated
-lists. Show both your Haskell specification and the ghci output.
+lists. Show both your Haskell specification and the ghci output. Name the
+functions `list2_<#>` where `<#>` is the number of the exercise.
 
 1. The integers from negative ten to ten
 1. The odd integers from one to nineteen in descending order
@@ -83,21 +80,22 @@ lists. Show both your Haskell specification and the ghci output.
 1. The floating-point numbers from zero to four by thirds; hint: use `(1/3)` in
    the specification; do you get round-off error?
 
+## Part 3: List concatenations
+
 Haskell includes a list concatenation operator (`++`) that allows you to combine
 two lists into a single list with the elements of both lists in the same order
 starting with the first list. For example, `[ 1, 3, 5 ] ++ [ 2, 4, 6 ]` returns
 the list `[1, 3, 5, 2, 4, 6]`. Since strings are just character lists in
 Haskell, this operator works for strings too. Use the concatenation operator and
 range specifications to specify the lists below, again including the Haskell
-specification and the ghci output.
+specification and the ghci output. Name the functions `list3_<#>` where `<#>` is
+the number of the exercise.
 
 1. The integers from one to five followed by five down to one
 1. The letters of the Latin alphabet, both uppercase and lowercase
 1. The letters of the alphabet together with the decimal digits
 
-Note that we've been doing a lot of pattern matching here, and pattern matching
-is all over in Haskell. (We'll get back to patterns of function parameters in
-Part 2 of this lab.)
+## Part 4: List comprehensions
 
 The most powerful list construction tool in Haskell (apart from writing
 functions) is the list comprehension. A list comprehension looks like a
@@ -107,13 +105,16 @@ list specification can be read as "the list of two times n where n is taken from
 the list of values from zero to ten." If you try it in ghci, you'll see that it
 gives the list of even integers from zero to twenty, or exactly the list of
 values that are two times the values in the list from zero to ten. Here are a
-few simple exercises; use list comprehensions to complete them:
+few simple exercises; use list comprehensions to complete them. Name the
+functions `list4_<#>` where `<#>` is the number of the exercise.
 
 1. The squares of the numbers from one to twenty (use the `^` operator)
 1. The square roots of the numbers from one to ten (use the `sqrt` function)
 1. 2<sup>n</sup> for numbers from zero to forty
 1. The multiples of &#960;/4 for multipliers zero to eight. (`pi` is &#960; in
    Haskell.)
+
+## Part 5: Logical qualifiers
 
 With list comprehensions, we can also add logical qualifiers that limit the
 values we take from the source list. For example, suppose we want all the
@@ -122,7 +123,8 @@ numbers from one to thirty that are not divisible by three. ``[ n | n <- [ 1 ..
 one qualifier, so ``[ n | n <- [ 1 .. 50 ], n `mod` 2 /= 0, n `mod` 3 /= 0 ]``
 gives the numbers from one to fifty that are neither divisible by two nor by
 three. (This is a good start on a list of prime numbers.) Specify the following
-lists and show the results:
+lists and show the results. Name the functions `list5_<#>` where `<#>` is the
+number of the exercise.
 
 1. The floating-point numbers from zero to four by thirds, using (`n / 3`) in
    the first part of the comprehension; do you now get less, more or the same
@@ -130,10 +132,11 @@ lists and show the results:
 1. The numbers from one to twenty that are divisible by two, three or both
 1. The letters of the lowercase alphabet that are not vowels
 
-Note that the technique you (should have) used in **5.a** was to specify a range
-of integers and then compute a fractional range by dividing or multiplying the
-integers by a floating-point constant. This technique is commonly used in
-for-loops to generate a sequence of evenly- spaced floating-point values:
+Note that the technique you (should have) used in **exercise 5.1** was to
+specify a range of integers and then compute a fractional range by dividing or
+multiplying the integers by a floating-point constant. This technique is
+commonly used in for-loops to generate a sequence of evenly- spaced
+floating-point values:
 
 ```
 for (int i = 0; i <= 10; i++) {
@@ -146,6 +149,8 @@ causes much more accurate results for x than does:
 ```
 for (double x = 0.0; x <= 1.0; x += 0.1) { ...
 ```
+
+## Part 6: Tuples
 
 And back to Haskell: There is another data construction in Haskell (besides the
 list) called the tuple. It consists of two or more data values (not necessarily
@@ -163,7 +168,8 @@ individually. The specification is straightforward: `[ (n, m) | n <- [ 0 .. 4 ],
 m <- [ 0 .. 4 ]]`. The only thing new is having two variables in the list
 specification, and two lists from which they take their values. We get 25 pairs,
 since there are five elements in each source list. Specify the following lists
-and show the results:
+and show the results. Name the functions `list6_<#>` where `<#>` is the number
+of the exercise.
 
 1. The list of 3-tuples (n, m, nm) where n and m are both taken from the list of
    numbers from zero to four
@@ -174,7 +180,7 @@ and show the results:
    numbers from one to three by 0.1, and the second number is the log of the
    first
 
-## Part 2: Haskell functions that process and produce lists
+## Part 7: Haskell functions that process and produce lists
 
 While the Haskell tools we used above are very powerful, (and we've only
 scratched the surface,) for some tasks with lists, we need to turn to functions.
@@ -198,12 +204,13 @@ patterns `[]` and `x:xs` here is very common in Haskell functions that deal with
 lists: every list is either empty (`[]`), or it consists of a first element
 (`x`) followed by zero or more additional elements (`xs`).
 
-1. Write a Haskell function that computes the sum of a list, using the count
-   function above as a model; check the type with the `:type` command after you
-   have your function working. Why is the type different than count's?
-1. Write a simple Haskell function that computes the mean of a list by dividing
-   its sum by its count. What happens when you call the function on an empty
-   list? If you get an error, how do you fix it?
+1. Write a Haskell function, called `mySum`, that computes the sum of a list,
+   using the count function above as a model; check the type with the `:type`
+   command after you have your function working. Why is the type different than
+   count's?
+1. Write a Haskell function, called `myMean`, that computes the mean of a list
+   by dividing its sum by its count. What happens when you call the function on
+   an empty list? If you get an error, how do you fix it?
 
 Now let's count the number of times a particular element occurs in a list:
 
@@ -229,10 +236,10 @@ writing the following:
 This code won't compile, however. You can't use pattern matching between
 parameters to avoid testing whether the two parameters are equal.
 
-1. Write a function `vowelCount1` that uses multiple calls to `elemCount` to
-   count all the vowels (lowercase only) in a string.
-1. Write a function `vowelCount2` that uses multiple cases to count all the
-   lowercase vowels in a string, with patterns like `'a':xs`.
+1. Write a function, called `vowelCount1`, that uses multiple calls to
+   `elemCount` to count all the vowels (lowercase only) in a string.
+1. Write a function, called `vowelCount2`, that uses multiple cases to count all
+   the lowercase vowels in a string, with patterns like `'a':xs`.
 
 Test both functions, making sure that both work correctly. Do they have the same
 types? Which is more efficient? Why?
@@ -241,7 +248,7 @@ Now let's write a few functions that return lists. We'll start with a function
 that mimics the range list constructor:
 
 ```lhs
->    range::(Numa,Orda)=>a->a->[a]
+>    range::(Num a,Ord a) => a -> a -> [a]
 >    range n m
 >      | n > m     = []
 >      | otherwise = n : (range (n + 1) m)
@@ -255,13 +262,12 @@ of or next value after `n`. Now the type becomes `range :: (Enum a, Ord a) => a
 type, including characters. (No, you won't be tested on anything in this
 paragraph.)
 
-1. Write a function that generates the list of squares of numbers from n down
-   to one. If n is less than one, it should return the empty list; otherwise, it
-   returns n squared followed by the list of squares from n-1 down to one.
-1. Write a function that takes a list of numbers and returns a list of numbers
-   that are the negative of the numbers in the original list. If the original
-   list is empty, it returns the empty list; otherwise, it returns the negative
-   of the first element in the list followed by the list of negatives of the
-   remaining elements in the list.
-
-[StarterCode]: {% file labs/03/SampleCode.lhs %}
+1. Write a function, called `squaresDown`, that generates the list of squares of
+   numbers from n down to one. If n is less than one, it should return the empty
+   list; otherwise, it returns n squared followed by the list of squares from
+   n-1 down to one.
+1. Write a function, called `negList`, that takes a list of numbers and returns
+   a list of numbers that are the negative of the numbers in the original list.
+   If the original list is empty, it returns the empty list; otherwise, it
+   returns the negative of the first element in the list followed by the list of
+   negatives of the remaining elements in the list.
