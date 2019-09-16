@@ -271,3 +271,23 @@ paragraph.)
    If the original list is empty, it returns the empty list; otherwise, it
    returns the negative of the first element in the list followed by the list of
    negatives of the remaining elements in the list.
+
+## Testing your work
+In your terminal, from the lab directory, execute the following command
+
+```sh
+./install-solutions
+```
+
+Assuming the command completes with no errors, then from within your Haskell
+interpreter, load the file `TestCode.hs`. If any of your functions were named
+incorrectly, you will get a compiler error.
+
+Once you have loaded `TestCode.hs`, call the function `runTests`. This function
+will execute a suite of tests to check the correctness of the code that you have
+written. If any of your functions have been implemented incorrectly the test
+function will report something the expected value (the correct value) and the
+value that was produced by your implementation.
+
+If any test failures are reported, determine the cause and correct your
+implementation.
