@@ -1,0 +1,85 @@
+\documentclass[]{exam}
+
+\usepackage{amsthm}
+
+\renewcommand{\questionshook}{%
+  \setlength{\leftmargin}{0pt}%
+  \setlength{\labelwidth}{-\labelsep}%
+}
+\renewcommand{\questionlabel}{$\Rightarrow$}
+\renewcommand{\partlabel}{}
+\renewcommand{\subpartlabel}{}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{axiom}{Axiom}
+
+\pagestyle{empty}
+
+%Predicates and quantifiers
+%
+%    theorem
+%    axioms
+%        even number
+%        odd number
+%    valid argument
+%        what doesn't this say about the conclusion
+%    direct proof
+%        p -> q
+
+\begin{document}
+  \begin{center}
+    \fbox{\parbox{5.5in}{\centering Use the following spaces to record
+      any information about key topics that you find useful.}}
+  \end{center}
+
+  \bigskip
+
+  \begin{axiom}
+    The absolute value of a real number $x$ is defined to be $|x|=-x$ if $x\leq
+    0$, and $|x|=x$ if $x\geq 0$.
+  \end{axiom}
+
+  \begin{questions}
+    \question Proof by cases:
+
+      \vspace{\stretch{1}}
+
+      \begin{parts}
+        \part
+          \begin{theorem}
+            For any real number $x$, $|x|\geq 0$.
+          \end{theorem}
+
+          \bigskip
+
+          \begin{proof}
+            \mbox{}\par
+            \vspace{\baselineskip}
+            \textbf{Case 1}:
+
+              \bigskip
+
+              \hspace{5em}\textbf{Hypothesis}: \hrulefill
+
+              \bigskip
+
+              \hspace{5em}\textbf{Conclusion}: \hrulefill
+
+            \mbox{}\par
+            \vspace{\stretch{2}}
+
+            \textbf{Case 2}:
+
+              \bigskip
+
+              \hspace{5em}\textbf{Hypothesis}: \hrulefill
+
+              \bigskip
+
+              \hspace{5em}\textbf{Conclusion}: \hrulefill
+            \mbox{}\par
+            \vspace{\stretch{2}}
+          \end{proof}
+      \end{parts}
+  \end{questions}
+\end{document}
