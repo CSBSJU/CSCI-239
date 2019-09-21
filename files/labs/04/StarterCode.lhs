@@ -32,4 +32,3 @@ FUNCTION TO MAKE IT VISIBLE TO THE COMPILER. (You may then remove this note.)
         (l1, l2) = splitList (x:xs)
         sl1      = mergeSort l1
         sl2      = mergeSort l2
-
