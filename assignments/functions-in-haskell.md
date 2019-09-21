@@ -122,7 +122,7 @@ structure, so we can use a tuple to return the two roots.
    Use the `:type` command to see what Haskell infers as the type of this
    function, and verify that it makes sense.
 
-   Now let's think about the domain of this function. It appears to be { *a* *b*
+2. Now let's think about the domain of this function. It appears to be { *a* *b*
    *c* : *a*, *b*, and *c* are real numbers }. We have found, as we expected,
    that there are some values of the parameters that don't give the expected
    values. It's time to handle the cases where the roots are complex, that is,
@@ -136,7 +136,7 @@ structure, so we can use a tuple to return the two roots.
    expressed as the complex number *x* + 0*i*.) Therefore, we need to modify the
    function to return a pair of pairs.
 
-2. Write a new Haskell function `quadRoots2` that modifies `quadRoots1` so that
+   Write a new Haskell function `quadRoots2` that modifies `quadRoots1` so that
    instead of returning a tuple in the form *(r1, r2)*, it returns a pair of
    pairs in the form *((r1, 0), (r2, 0))*.
 
