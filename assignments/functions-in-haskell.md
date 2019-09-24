@@ -243,14 +243,14 @@ operators like `<`.)
    the maximum element in a list.
 
 2. Write a Haskell function `median1st3` that returns the median of the first
-   three or fewer elements in a list as follows. If the list has only one
-   element, it returns that element; if the list has two elements, it returns
-   the first; if the lists has at least three elements, it returns the middle of
-   the first three. Note that you can use the pattern `x:[]` for a list with one
-   element, and `x:y:[]` for a list with exactly two elements and `x:y:z:xs` for
-   a list with three or more elements. In the case with three or more elements,
-   you'll need to compare them to determine which is in the middle. Test your
-   function, and note that again, it doesn't work for empty lists.
+   three or fewer elements as follows. If the list has only one element, it
+   returns that element; if the list has two elements, it returns the first; if
+   the lists has at least three elements, it returns the middle of the first
+   three. Note that you can use the pattern `x:[]` for a list with one element,
+   and `x:y:[]` for a list with exactly two elements and `x:y:z:xs` for a list
+   with three or more elements. In the case with three or more elements, you'll
+   need to compare them to determine which is in the middle. Test your function,
+   and note that again, it doesn't work for empty lists.
 
 3. Now write a function `medianAll3s` that returns a list of the medians of
    every three elements of a list. If the list is empty, it returns the empty
