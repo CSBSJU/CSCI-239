@@ -1,0 +1,154 @@
+\documentclass[]{exam}
+
+\usepackage{amssymb}
+
+\pagestyle{empty}
+
+
+\def\bonuson{\renewcommand\partlabel{*(\thepartno)}}
+\def\bonusoff{\renewcommand\partlabel{(\thepartno)}}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \noindent%
+  You may find the following definitions helpful:\\[1\baselineskip]
+  \noindent%
+  $A \cap B = \{\ x\ :\ x \in A \land x \in B\ \}$\\
+  $A \cup B = \{\ x\ :\ x \in A \lor x \in B\ \}$\\
+  $A - B = \{\ x\ :\ x \in A \land x \notin B\ \}$\\
+  $A \oplus B = \{\ x\ :\ x \in A \oplus x \in B\ \}$\\
+  $A \times B = \{\ (a,\ b)\ :\ a \in A \land b \in B\ \}$\\
+  $\overline{A} = \{\ x\ :\ x \notin A\ \}$
+
+  \begin{questions}
+    \begin{EnvUplevel}
+      Consider the following sets:\\[1\baselineskip]
+
+      $A = \{\ 1,\ 2,\ 3,\ 4,\ 5\ \}$\\
+      $B = \{\ a,\ b,\ c,\ d,\ 4,\ 5\ \}$\\
+      $C = \{\ a,\ b\ \}$
+    \end{EnvUplevel}
+
+    \bigskip
+
+    \question Using roster notation, give formal descriptions of the following
+      sets:
+
+      \begin{parts}
+        \part $A \cap B$
+          \begin{solution}
+            $\{\ 4,\ 5\ \}$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $A \cup B$
+          \begin{solution}
+            $\{\ 1,\ 2,\ 3,\ 4,\ 5,\ a,\ b,\ c,\ d\ \}$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $B - C$
+          \begin{solution}
+            $\{\ c,\ d,\ 4,\ 5\ \}$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $C - B$
+          \begin{solution}
+            $\varnothing$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $(A \cap B) \times C$
+          \begin{solution}
+            $\{\ (4,\ a),\ (4,\ b),\ (5,\ a),\ (5,\ b)\ \}$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \bonuson
+        \part $\overline{A}$
+          \begin{solution}
+            $\mathbb{Z} - A$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \bonusoff
+      \end{parts}
+
+    \newpage
+
+    \question For each of the following sets, draw the corresponding Venn
+      diagram:
+
+      \begin{parts}
+        \part $A \cap B$
+          \vspace{\stretch{1}}
+        \part $A \cup B$
+          \vspace{\stretch{1}}
+        \part $B - C$
+          \vspace{\stretch{1}}
+        \part $C - B$
+          \vspace{\stretch{1}}
+        \part $\overline{A}$
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \question For each of the following statements, let $|A| = n$ and $|B| = m$.
+      If $A \subseteq B$, then what is the cardinality of each of the following
+      sets:
+
+      \begin{parts}
+        \part $|A \cap B|$
+          \begin{solution}
+            $n$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $|A - B|$
+          \begin{solution}
+            0
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $|B \oplus A|$
+          \begin{solution}
+            $m - n$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $|B \times A|$
+          \begin{solution}
+            $nm$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \uplevel{\emph{Hint:} for the following parts, you might find it useful
+          to restate each set as an equivalent set, using applications of the
+          \emph{set identities} before trying to determine cardinality}
+
+          \bigskip\bigskip\bigskip
+
+        \bonuson
+        \part $|A \cup (A \cap B)|$
+          \begin{solution}
+            $A \cup (A \cap B) = A$, by \emph{absorption law}, so $|A \cup (A
+            \cap B)| = |A| = n$.
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $|(\overline{A} \cap B) \cup (A \cap B)|$
+          \begin{solution}
+            $(\overline{A} \cap B) \cup (A \cap B) = B \cap (A \cup
+            \overline{A}) = B \cap U = B$, by \emph{distributive law},
+            \emph{complement law}, \emph{identity law}, respectively, so
+            $|(\overline{A} \cap B) \cup (A \cap B)| = |B| = m$.
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $|A \cap (B \cap \overline{B})|$
+          \begin{solution}
+            $A \cap (B \cap \overline{B}) = A \cap \varnothing = \varnothing$,
+            by \emph{complement law} and \emph{domination law}, respectively,
+            so $|A \cap (B \cap \overline{B})| = |\varnothing| = 0$.
+          \end{solution}
+          \vspace{\stretch{1}}
+        \bonusoff
+      \end{parts}
+  \end{questions}
+\end{document}
