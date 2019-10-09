@@ -1,0 +1,104 @@
+\documentclass[]{exam}
+
+\usepackage{amssymb}
+
+\pagestyle{empty}
+
+
+\def\bonuson{\renewcommand\partlabel{*(\thepartno)}}
+\def\bonusoff{\renewcommand\partlabel{(\thepartno)}}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \begin{questions}
+    \question Write a Haskell function to add the first \texttt{n} odd numbers
+      of a list, using only the following functions: \texttt{sum},
+      \texttt{filter}, \texttt{even}, \texttt{not} and \texttt{take}. The
+      function signatures are given below.
+
+      \texttt{sum :: Integral a => [a] -> a}\\
+      \texttt{filter :: (a -> Bool) -> [a] -> [a]}\\
+      \texttt{even :: Integral a => a -> Bool}\\
+      \texttt{not :: Bool -> Bool}\\
+      \texttt{take :: Integral -> [a] -> [a]}
+
+      \vspace{\stretch{1}}
+
+    \question Consider the following functions:
+
+      $f: \mathbb{R} \rightarrow \mathbb{R}.~f(x)=x^2$\\
+      $g: \mathbb{Z} \rightarrow \mathbb{R}.~g(x)=\frac{x}{2}$\\
+      $h: \mathbb{R} \rightarrow \mathbb{Z}.~h(x)=\lceil x \rceil$
+
+      \bigskip
+
+      What will be the definition of the following function compositions
+
+      \begin{parts}
+        \part $(f \circ g)$
+          \begin{solution}
+            $(f \circ g): \mathbb{Z} \rightarrow \mathbb{R}.~(f \circ
+            g)(x)=(\frac{x}{2})^2=\frac{x^2}{4}$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $(f \circ h)$
+          \begin{solution}
+            $(f \circ h): \mathbb{R} \rightarrow \mathbb{R}.~(f \circ
+            g)(x)=(\lceil x \rceil)^2$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $(h \circ g \circ h \circ f)$
+          \begin{solution}
+            $(h \circ g \circ h \circ f): \mathbb{R} \rightarrow \mathbb{Z}.~(h
+            \circ g \circ h \circ f)=\lceil \frac{\lceil x^2 \rceil}{2} \rceil$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \uplevel{Use your definitions to evaluate the following function
+          compositions:}
+
+        \part $(f \circ g)(1)$
+          \begin{solution}
+            $(f \circ g)(0) = \frac{1}{4}$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $(f \circ h)(3.5)$
+          \begin{solution}
+            $(f \circ h)(3.5) = 16$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $(h \circ g \circ h \circ f)(\sqrt 3)$
+          \begin{solution}
+            $(h \circ g \circ h \circ f)(\sqrt 3) = 2$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+      \newpage
+
+      \uplevel{For each of the following functions, indicate whether the
+        function has a well-defined inverse. If the inverse is well-defined,
+        give the input/output relationship.}
+
+        \part $f$
+          \begin{solution}
+            $f$ is not onto, thus is not bijective, thus is not invertible.
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $g$
+          \begin{solution}
+            $g^{-1}(x)=2x$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $(g \circ f)$
+          \begin{solution}
+            $(g \circ f)^{-1}(x)=\sqrt{2x}$
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+  \end{questions}
+\end{document}
