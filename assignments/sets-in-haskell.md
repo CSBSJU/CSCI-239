@@ -23,7 +23,7 @@ name (`StarterCode`), a list (in parentheses) of the items exported from the
 module, and the keyword `where`. Everything after this in the file defines the
 exported items in Haskell code.
 
-Now compare this to the file `TestCode.lhs`. This file is also a module
+Now compare this to the file `TestCode.hs`. This file is also a module
 definition, as you can see from the first Haskell code. The `TestCode` module,
 however, doesn't export anything, because it doesn't implement anything that's
 likely to be of use anywhere else. It does import the `StarterCode` module, and
@@ -41,7 +41,7 @@ file at a time in *ghci*.
 
 ## Part 2: Testing a module with stub functions and a test suite
 
-Load the file `TestCode.lhs` into ghci. Oh! No! A bunch of error messages! The
+Load the file `TestCode.hs` into ghci. Oh! No! A bunch of error messages! The
 first one is a *"The type signature for 'isSubsetOf' lacks an accompanying
 binding"* in line 62 of `StarterCode.lhs`. If you look at line 62, you will see that it contains an incomplete function definition, because it's going to
 be your job to complete this function and several others. In order to begin
@@ -63,17 +63,17 @@ Now put stub implementations in all the other functions that have fill in the
 blank comments. (You may want to keep the comments to identify the places you
 need to go back and finish.) Each stub implementation is a one-line definition
 with dummy parameters (variables rather than patterns) and a dummy return value
-such as `False` for `Bool`, `0` for a number, and `emptySet` where a set is
+such as `False` for `Bool`, `0` for a number, and `empty` where a set is
 returned. If you do this correctly, you should be able to load the file without
 syntax errors. Keep at it until you can.
 
 Once the file loads without errors, you can begin testing. At this point, the
 only things you can really test are the parts you've been given, which have
-already been tested. Try the `runTests' singleton` and the runTests' fromList`
+already been tested. Try the `runTests' singleton` and the `runTests' fromList`
 functions. These two tests test the construction of a `Set` from a single
 element as well as the construction of a `Set` given a list of elements.
 
-Note: There are several tests in the `TestCode.lhs` file, and they are intended
+Note: There are several tests in the `TestCode.hs` file, and they are intended
 to be fairly thorough, but they are not exhaustive. If you feel there are
 important test cases that have not been included, feel free to add more of your
 own, but please leave the ones that are there to help verify your
@@ -98,7 +98,7 @@ so we take advantage of that equivalence with a pattern for the parameter
 consisting of the set constructor and its associated list. The function is then
 defined to be the length of the list part of the parameter pattern.
 
-With `TestCode.lhs` loaded, try the `runTests' size` function; it should
+With `TestCode.hs` loaded, try the `runTests' size` function; it should
 report 0 errors and 0 failures. Each of the subsequent set functions have and
 associated set of tests which can be executed, isolated from the other tests, by
 running the function `runTests'` with the name of the set function.
@@ -122,7 +122,7 @@ B. There are many ways to go about solving this problem, but we will focus on
 two. The first is the recursive solution. Consider the following function:
 
 ```lhs
-> isSubsetOf a@(Set (x:xs)) b = ...
+> isSubsetOf (Set (x:xs)) b = ...
 ```
 
 In this case, you could ask a question like, is the first element of the first
@@ -167,3 +167,4 @@ elements of *B*.
 
 Choose whichever defintion you like, or define your own (as long as it is still
 set union) to implement `union` in Haskell.
+
