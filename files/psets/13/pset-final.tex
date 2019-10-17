@@ -1,0 +1,116 @@
+\documentclass[]{exam}
+
+\usepackage{amsthm}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \begin{questions}
+    \question Characterize the rate of growth of each function $f$ below by
+      giving a function $g$ such that $f = \Theta(g)$. The function $g$ should
+      be one of the functions in the table of common functions. 
+
+      \begin{parts}
+        \part $f(n) = n^8 + 3n - 4$
+          \begin{solution}
+            $f = \Theta(n^8)$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $f(n) = 2\cdot3^n$
+          \begin{solution}
+            $f = \Theta(3^n)$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $f(n) = 7(\log \log n) + 3(\log n) + 12n$
+          \begin{solution}
+            $f = \Theta(n)$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $f(n) = 9(n \log n) + 5(\log \log n) + 5$
+          \begin{solution}
+            $f = \Theta(n \log n)$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $f(n) = n·\log_{37} n$
+          \begin{solution}
+            $f = \Theta(n \log n)$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $f(n) = n^21 + (1.1)^n$
+          \begin{solution}
+            $f = \Theta((1.1)^n)$
+          \end{solution}
+          \vspace{\stretch{1}}
+        \part $f(n) = 23n + n^3 - 2$
+          \begin{solution}
+            $f = \Theta(n^3)$
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \question Give complete proofs for the growth rates of the polynomials
+      below. You should provide specific values for $c$ and $n_0$ and prove
+      algebraically that the functions satisfy the definitions for $O$,
+      $\Omega$, and $\Theta$. 
+
+      \begin{parts}
+        \part $f(n) = (1/2)n^5 - 100n^3 + 3n - 1$. Prove that $f = O(n^5)$.
+          \begin{solution}
+            \begin{proof}
+              Let $c = 7/2$ and $n_0 = 1$. For $n \geq 1$, the -1 and the
+              $-100n3$ terms are both negative. Therefore, those terms can be
+              dropped from the expression for $f(n)$ and the resulting
+              expression is larger:
+
+              $(1/2)n^5 - 100n^3 + 3n - 1 < (1/2)n^5 + 3^n$
+
+              For $1 \leq n$, $n \leq n^5$, so
+
+              $(1/2)n^5 + 3n \leq (1/2)n^5 + 3n^5 = (7/2)n^5$.
+
+              Therefore for $n \geq 1$, $f(n) \leq (7/2)n^5$.
+
+              $f = O(n^5)$.
+            \end{proof}
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part $f(n) = n^3 + 3n^2 + 4$. Prove that $f = \Theta(n^3)$.
+          \begin{solution}
+            \begin{proof}
+               Let $c = 8$ and $n_0 = 1$.
+
+               For $n \geq 1$, $n^3 \geq n^2$ and $n^3 \geq 1$, so
+
+               $n^3 + 3n^2 + 4 \leq n^3 + 3n^3 + 4n^3 = 8n^3$
+
+               Therefore for $n \geq 1$, $f(n) \leq 8n^3$.
+
+               $f = O(n^3)$.
+            \end{proof}
+
+            \begin{proof}
+               Let $c = 1$ and $n_0 = 1$. Since $n$ is positive, the $3n^2$ term
+               in $f(n)$ is also positive. The positive terms can be dropped
+               from the expression $n^3 + 3n^2 + 4$ and the resulting expression
+               is smaller, so
+
+               $n^3 + 3n^2 + 4 \geq n^3$.
+
+               Therefore for $n \geq 1$, $f(n) \geq 1\cdot·n^3$.
+
+               $f = \Omega(n^3)$.
+            \end{proof}
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+  \end{questions}
+\end{document}

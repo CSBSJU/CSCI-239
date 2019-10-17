@@ -1,0 +1,119 @@
+\documentclass[]{exam}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\renewcommand{\questionshook}{%
+  \setlength{\leftmargin}{0pt}%
+  \setlength{\labelwidth}{-\labelsep}%
+}
+\renewcommand{\questionlabel}{$\Rightarrow$}
+\renewcommand{\partlabel}{}
+\renewcommand{\subpartlabel}{}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{axiom}{Axiom}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\parbox{5.5in}{\centering Use the following spaces to record
+      any information about key topics that you find useful.}}
+  \end{center}
+
+  \bigskip
+
+  \begin{questions}
+    \question Learning outcomes:
+      \vspace{\stretch{2}}
+
+    \question Why do we care about the growth of functions?
+      \begin{solution}
+        We want to answer questions that ask to compare two algorithms that
+        solve the same problem, but may require different amounts of work.
+
+        Today we formalize the idea that a solution is not necessarily the best
+        solution.
+      \end{solution}
+      \vspace{\stretch{1}}
+
+    \question Definition of $O$ expressed as a quantified statement:
+      \begin{solution}
+        $f=O(g) \iff \exists c \exists n_0 \forall n ((n \geq n_0) \rightarrow
+        (f(n) \leq c\cdot g(n)))$
+      \end{solution}
+      \vspace{\stretch{1}}
+
+      \begin{parts}
+        \part Rules for choosing $c$ and $n_0$ to show $f=O(n^k)$ when $f(n)$ is
+          a polynomial function of degree $k$:
+          \begin{solution}
+            \begin{itemize}
+              \item $n_0 = 1$
+              \item $c = $ the sum of the positive coefficients in $f$
+                (including the constant term)
+            \end{itemize}
+          \end{solution}
+          \vspace{\stretch{2}}
+
+        \part Intuitively, $O$, describes what relationship between functions
+          $f$ and $g$, if $f=O(g)$?
+          \begin{solution}
+            $f$ grows no faster than $g$. Which means that eventually, for a
+            large enough input size, $g$ will be greater than $f$ within some
+            constant factor.
+
+            \emph{upper bound}
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \question Definition of $\Omega$ expressed as a quantified statement:
+      \begin{solution}
+        $f=\Omega(g) \iff \exists c \exists n_0 \forall n ((n \geq n_0)
+        \rightarrow (f(n) \geq c\cdot g(n)))$
+      \end{solution}
+      \vspace{\stretch{1}}
+
+      \begin{parts}
+        \part Rules for choosing $c$ and $n_0$:
+          \begin{solution}
+            \begin{itemize}
+              \item If $f$ has no negative coefficients, then $c = a_k$ and $n_0
+                = 1$ suffice.
+              \item If $f$ has negative coefficients (but $a_k > 0$), then let A
+                    be the sum of the absolute values of the negative
+                    coefficients in $f(n)$. The choices $c = a_k/2$ and $n_0 =
+                    max\{1, 2A/(a_k)\}$ are sufficient.
+            \end{itemize}
+          \end{solution}
+          \vspace{\stretch{2}}
+
+        \part Intuitively, $\Omega$, describes what relationship between
+          functions $f$ and $g$, if $f=\Omega(g)$?
+          \begin{solution}
+            $g$ grows no faster than $f$. Which means that eventually, for a
+            large enough input size, $f$ will be greater than $g$ within some
+            constant factor.
+
+            \emph{lower bound}
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \question Definition of $\Theta$ expressed in terms of $O$ and $\Theta$:
+      \begin{solution}
+        $f=\Theta(g) \iff f=O(g) \land f=\Omega(g)$
+      \end{solution}
+      \vspace{\stretch{1}}
+
+    \question Common functions in algorithmic complexity:
+      \begin{solution}
+        Table 6.2.1
+      \end{solution}
+      \vspace{\stretch{2}}
+  \end{questions}
+\end{document}
