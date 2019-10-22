@@ -2,6 +2,7 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{blkarray}
 \usepackage{tikz}
 \usepackage{tabularx}
 \tikzstyle{vertex}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
@@ -25,11 +26,93 @@
       \subseteq A \times B$ such that (letter, word) is in the relation if that
       letter occurs somewhere in the word. Draw the arrow diagram and the matrix
       representation for each relation.
+
+      \begin{solution}
+        \begin{center}
+          \begin{tikzpicture}[shorten >=1pt,->]
+            \node[vertex] (r) at (0,0) {$r$};
+            \node[vertex,below of=r] (o) {$o$};
+            \node[vertex,below of=o] (t) {$t$};
+            \node[vertex,below of=t] (p) {$p$};
+            \node[vertex,below of=p] (c) {$c$};
+
+            \node[vertex,node distance=2cm,right of=r] (discrete) at (0,0) {$discrete$};
+            \node[vertex,node distance=1.5cm,below of=discrete] (math) {$math$};
+            \node[vertex,node distance=1.5cm,below of=math] (proof) {$proof$};
+            \node[vertex,node distance=1.5cm,below of=proof] (proposition) {$proposition$};
+
+            \path
+              (r) edge (discrete)
+              (r) edge (proof)
+              (r) edge (proposition)
+              (o) edge (proof)
+              (o) edge (proposition)
+              (t) edge (discrete)
+              (t) edge (proposition)
+              (t) edge (math)
+              (p) edge (proof)
+              (p) edge (proposition)
+              (c) edge (discrete);
+          \end{tikzpicture}
+        \end{center}
+
+        \[ A = 
+          \begin{blockarray}{ccccccc}
+            \begin{block}{(cccccc)c}
+              & 1 & 0 & 1 & 1 && r \\
+              & 0 & 0 & 1 & 1 && o \\
+              & 1 & 1 & 0 & 1 && t \\
+              & 0 & 0 & 1 & 1 && p \\
+              & 1 & 0 & 0 & 0 && c \\
+            \end{block}
+          \end{blockarray}
+        \]
+      \end{solution}
+
       \vspace{\stretch{1}}
+
+    \ifprintanswers
+      \newpage
+    \fi
 
     \question The domain of relation $D$ is $\{\ 2,\ 3,\ 12,\ 16,\ 27,\ 48\ \}$.
       For $x, y$ in the domain, $xDy$ if $y$ is an integer multiple of $x$. Draw
-      the arrow diagram and the matrix representation for each relation.
+      the arrow diagram and the matrix representation for the relation.
+
+      \begin{solution}
+        \begin{center}
+          \begin{tikzpicture}[shorten >=1pt,->]
+            \foreach \name/\angle in {2/270, 3/210, 12/150, 16/90, 27/30, 48/-30}
+              \node[vertex,xshift=6cm,yshift=.5cm] (\name) at (\angle:2cm) {$\name$};
+            \foreach \from/\to in {2/12,2/16,2/48,3/12,3/27,3/48,12/48,16/48}
+              \draw (\from) -- (\to);
+
+            \path
+              ( 2) edge[loop below] ( 2)
+              ( 3) edge[loop left] ( 3)
+              (12) edge[loop left] (12)
+              (16) edge[loop above] (16)
+              (27) edge[loop right] (27)
+              (48) edge[loop right] (48);
+          \end{tikzpicture}
+        \end{center}
+
+        \[ A = 
+          \begin{blockarray}{ccccccccc}
+              &&  2 &  3 & 12 & 16 & 27 & 48 && \\
+            \begin{block}{(cccccccc)c}
+              &&  1 &  0 &  1 &  1 &  0 &  1 &&  2 \\
+              &&  0 &  1 &  1 &  0 &  1 &  1 &&  3 \\
+              &&  0 &  0 &  1 &  0 &  0 &  1 && 12 \\
+              &&  0 &  0 &  0 &  1 &  0 &  1 && 16 \\
+              &&  0 &  0 &  0 &  0 &  1 &  0 && 27 \\
+              &&  0 &  0 &  0 &  0 &  0 &  1 && 48 \\
+            \end{block}
+          \end{blockarray}
+        \]
+      \end{solution}
+
+
       \vspace{\stretch{1}}
 
     \question Consider the following relation $F$. The domain of the relation
