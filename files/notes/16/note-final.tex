@@ -1,0 +1,82 @@
+\documentclass[answers]{exam}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+
+\renewcommand{\questionshook}{%
+  \setlength{\leftmargin}{0pt}%
+  \setlength{\labelwidth}{-\labelsep}%
+}
+\renewcommand{\questionlabel}{$\Rightarrow$}
+\renewcommand{\partlabel}{}
+\renewcommand{\subpartlabel}{}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{axiom}{Axiom}
+\newtheorem*{proposition}{Proposition}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\parbox{5.5in}{\centering Use the following spaces to record
+      any information about key topics that you find useful.}}
+  \end{center}
+
+  \bigskip
+
+  \begin{questions}
+    \question Prove the following propositional statements using strong
+      induction.
+
+      \bigskip
+
+      \begin{parts}
+        \part
+          \begin{proposition}
+            \vspace{-1.25\baselineskip}
+            Every positive integer can be written as a sum of distinct powers of
+            2.
+          \end{proposition}
+    
+          \begin{proof}
+            By strong mathematical induction on $n$.
+
+            \hfill
+
+            \begin{enumerate}[label=(\arabic{*})]
+              \item \emph{Base case}. $n=1$.
+                \begin{solution}
+                  $2^0=1$.
+                \end{solution}
+                \vspace{\stretch{1}}
+
+              \item \emph{Inductive step}.
+                \begin{solution}~\\
+                  Assume for $k\geq 1$, $k$ can be written as the sum of
+                  distinct powers of 2.\\
+
+                  Show that $k+1$ can be written as the sum of distinct powers
+                  of 2.\\
+
+                  $\exists_j\ 2^j\leq k+1<2^{j+1}$.\\
+
+                  If $2^j=k+1$, then $k+1$ can be written as sum of distinct
+                  powers of 2, namely $2^j$, and we are done.\\
+
+                  If $2^j\neq k+1$, then $2^j<k+1<2^{j+1}$, so\\
+
+                  $0 < k+1-2^j<2^{j+1}-2^j=2^j\leq k$.\\
+
+                  Since $0<k+1-2^j<k$, the inductive hypothesis guarantees that
+                  $k+1-2^j$ can be written as a sum of distinct powers of 2 and
+                  the powers are less than $j$. Thus, $k+1=2^j+$ a sum of
+                  distinct powers of 2 where the powers of 2 are less than $j$.
+                \end{solution}
+                \vspace{\stretch{2}}
+            \end{enumerate}
+          \end{proof}
+      \end{parts}
+  \end{questions}
+\end{document}
