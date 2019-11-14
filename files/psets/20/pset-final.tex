@@ -1,0 +1,87 @@
+\documentclass[]{exam}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \section*{Discrete probability}
+
+  \begin{questions}
+    \question If you flip a coin nine times, what is the probability that you
+      will flip six heads and three tails?
+      \begin{parts}
+        \part What is the event, $E$, and what is $|E|$?
+          \begin{solution}
+            The event is the number of permutations of \{H,H,H,H,H,H,T,T,T\}.
+
+            This a counting permutations with repetitions. So
+            $\frac{n!}{n_1!n_2!\cdots n_k!}=\frac{9!}{6!3!}=\frac{9\cdot8\cdot7}{3\cdot2\cdot1}=84$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the sample space, $S$, and what is $|S|$?
+          \begin{solution}
+            All possible coin flips. So $|S|=2^9$.
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the probability mentioned above, namely $p(E)$?
+          \begin{solution}
+            $\frac{|E|}{|S|}=\frac{84}{512}=.1641$.
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \question What is the probability that any pair of people, chosen at random,
+      have the same birthday?
+      \begin{solution}
+        $\frac{P(366,2)}{366^2}=\frac{1}{366^2}\cdot\frac{366!}{(366-2)!}=\frac{366\cdot365}{366\cdot366}=\frac{365}{366}=.9973$
+      \end{solution}
+      \vspace{\stretch{1}}
+
+    \question What is the probability that some pair of people \emph{in our
+      class} have the same birthday?
+
+      \begin{parts}
+        \part Define the event $\overline E$ to be the set of outcomes where
+          everyone in the class has a different birthday, i.e., the complement
+          of the event we would like to count. Compute $|\overline E|$.
+          \begin{solution}
+            $P(366,23)$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the size of the sample space $S$ for this outcome?
+          \begin{solution}
+            $366^{23}$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the probability that everyone in the class has a different
+          birthday?
+          \begin{solution}
+            $\frac{P(366,23)}{366^{23}}=0.4937$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the probability that some pair of people in the class have
+          the same birthday?
+          \begin{solution}
+            $1-.4937=.5063$
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+  \end{questions}
+\end{document}

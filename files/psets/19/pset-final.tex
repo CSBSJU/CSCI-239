@@ -1,0 +1,139 @@
+\documentclass[]{exam}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \section*{Counting by complement}
+
+  \begin{questions}
+    \question Give numerical answers for the questions below.
+      \begin{parts}
+        \part There are 5 kids on the math team. Two kids will be selected from
+          the team to compete in the state competition. How many ways are there
+          to select the 2 competitors? 
+          \begin{solution}
+            $\binom{5}{2}=\frac{5!}{2!(5-2)!}=\frac{5\cdot4\cdot3\cdot2\cdot1}{2\cdot1\cdot3\cdot2\cdot1}=\frac{5\cdot4}{2}=10$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part The math team has 3 girls and 2 boys. How many ways are there to
+          select the two competitors if they are both girls?
+          \begin{solution}
+            $\binom{3}{2}=\frac{3!}{2!(3-2)!}=\frac{3\cdot2\cdot1}{2\cdot1\cdot1}=\frac{6}{2}=3$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part The math team has 3 girls and 2 boys. How many ways are there to
+          select the two competitors so that at least one boy is chosen?
+          \begin{solution}
+            \textbf{Counting directly} Two choices for first boy. For each of
+            those choices, there are four choices (1 boy, 3 girls) for the other
+            competitor, which gives $2\cdot4=8$. However, counting this way
+            counts the team of two boys twice, once for boy 1 and once for boy
+            2, thus must be subtracted away, so $2\cdot4-1=7$.
+
+            \textbf{Counting by complement} From Part (a), there are 10 total
+            ways to make a two person team, three of which have no boys. Thus,
+            the remaining $10-3=7$ teams must have at least one boy on them.
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \uplevel{\section*{Inclusion-exclusion principle}}
+
+    \question You are contracted by the FBI to unlock the phone of a suspected
+      criminal. Your forensics team informs you that the material on the glass
+      where the 8-key would appear during passcode entry has more oil-residue,
+      left behind by fingers, than other places on the screen. This is
+      understood to be a strong indication that the passcode contains at least
+      one 8. How much does knowing that the passcode includes the digit 8 narrow
+      the search space, considering that the passcode is 4 digits?
+
+      \begin{parts}
+        \part Use the inclusion-exclusion principle to count the number of 2
+          digit passcode that include an 8.
+          \begin{solution}
+            There are 10 passcodes of the form \texttt{`8[0-9]'} and 10
+            passcodes of the form \texttt{`[0-9]8'}. However these two sets are
+            not disjoint. In fact their intersection has exactly one element,
+            the passcode \texttt{`88'}. So to count the total number of 2 digit
+            passcodes that include an 8, we have $10+10-1=19$.
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part Use the inclusion-exclusion principle to count the number of 3
+          digit passcode that include an 8.
+          \begin{solution}
+            There are 100 passcodes of the form \texttt{`8[0-9][0-9]'}, 100
+            passcodes of the form \texttt{`[0-9]8[0-9]'} and 100 passcodes of
+            the form \texttt{`[0-9][0-9]8'}. However these three sets are not
+            disjoint. Furthermore, no pair of these sets is disjoint. In fact,
+            given any pair of these sets, their intersection has exactly 10
+            elements and the intersection of all three sets has exactly one
+            element. So to count the total number of 3 digit passcodes that
+            include an 8, we have $100+100+100-10-10-10+1=271$.
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part Use the inclusion-exclusion principle to count the number of 4
+          digit passcode that include an 8.
+          \begin{solution}
+            There are 1000 passcodes of the form \texttt{`8[0-9][0-9][0-9]'},
+            likewise for an 8 in the second, third, or fourth position. As
+            before, the sets are not disjoint, so we subtract away elements that
+            are shared by any two sets, 100 per pair. Then we add back elements
+            shared by any three sets, 10 per triple, than subtract away the
+            single passcode that is in all four sets, namely \texttt{`8888'}.
+            This gives us
+            $1000+1000+1000+1000-\binom{4}{2}\cdot100+\binom{4}{3}\cdot10-1=4000-600+40-1=3439$.
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \question Solve the previous three sub-problems using counting by complement
+      rather than the inclusion-exclusion principle, to verify that you have the
+      correct answers, i.e., the total number of passcodes should be the same.
+
+      \begin{parts}
+        \part~
+          \begin{solution}
+            The total number of 2 digit passcodes is $10^2$. The total number of
+            2 digit passcodes that do not include an 8 is $9^2$. So the total
+            number of 2 digit passcodes that include at least one 8 is
+            $10^2-9^2=19$.
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part~
+          \begin{solution}
+            The total number of 3 digit passcodes is $10^3$. The total number of
+            3 digit passcodes that do not include an 8 is $9^3$. So the total
+            number of 3 digit passcodes that include at least one 8 is
+            $10^3-9^3=271$.
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part~
+          \begin{solution}
+            The total number of 4 digit passcodes is $10^4$. The total number of
+            4 digit passcodes that do not include an 8 is $9^4$. So the total
+            number of 4 digit passcodes that include at least one 8 is
+            $10^4-9^4=3439$.
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+  \end{questions}
+\end{document}
