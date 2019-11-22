@@ -1,0 +1,49 @@
+\documentclass[]{exam}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \section*{Conditional probability}
+
+  \begin{questions}
+    \question Suppose that we flip a coin three times, and all eight
+      possibilities are equally likely. Moreover, suppose we know that the event
+      $F$, that the first flip comes up tails, occurs. Given this information,
+      what is the probability of the event $E$, that an odd number of tails
+      appears?
+      \begin{solution}
+        Because the first fip comes up tails, there are only four possible
+        outcomes: $TTT, TTH, THT,$ and $THH$, where $H$ and $H$ represent heads
+        and tails, respectively. An odd number of tails appears only for the
+        outcomes $TTT$ and $THH$. Because the eight outcomes have equal
+        probability, each of the four possible outcomes, given that $G$ occurs,
+        should also have an equal probability of $1/4$. This suggests that we
+        should assign the probability of $2/4=1/2$ to $E$, given that $F$
+        occurs.
+
+        $p(E|F)=\frac{p(E \cap F)}{p(F)}=\frac{\frac{2}{8}}{\frac{4}{8}}=\frac{1}{2}$
+      \end{solution}
+      \vspace{\stretch{1}}
+
+    \question Are events $E$ and $F$ independent?
+      \begin{solution}
+        $p(E \cap F)=\frac{2}{8}=\frac{4}{8}\cdot\frac{4}{8}=p(E)\cdot p(F)$
+      \end{solution}
+      \vspace{\stretch{1}}
+
+    \question Exercise 9.3.1 from zyBooks
+
+    \question Exercise 9.3.6 from zyBooks
+  \end{questions}
+\end{document}
