@@ -1,0 +1,67 @@
+\documentclass[]{exam}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \section*{Bayes' theorem}
+
+  \begin{questions}
+    \question Suppose we have two coins. The first coin is a fair coin and the
+      second coin is biased. The biased coin comes up heads with probability .75
+      and tails with probability .25. We select a coin at random and flip the
+      coin ten times. The results of the coin flips are mutually independent.
+      The result of the 10 flips is: T,T,H,T,H,T,T,T,H,T. What is the
+      probability that we selected the biased coin?
+      \begin{solution}
+        Let $B$ be the event that we selected the biased coin.
+        $p(B)=p(\overline{B})=1/2$.
+
+        Let $Y$ be the event that the outcomes is T,T,H,T,H,T,T,T,H,T. Because
+        the results of the flips are independent, $p(Y|\overline{B}) =
+        (1/2)^{10}$. Also $p(Y|B) = (1/4)^7(3/4)^3$. Using Bayes' Theorem:
+
+        $p(B|Y)=\dfrac{p(Y|B)p(B)}{p(Y|B)p(B)+p(Y|\overline{B})p(\overline{B})}
+        =\dfrac{(1/4)^7(3/4)^3(1/2)}{(1/4)^7(3/4)^3(1/2)+(1/2)^{10}(1/2)} =
+        \dfrac{27}{27+2^{10}}\approx 0.0257$.
+      \end{solution}
+      \vspace{\stretch{1}}
+
+    \question Na\"{i}ve Bayes classifier
+
+      \begin{parts}
+        \part Using Bayes' theorem, compute the probability that a traveler
+          survived (\emph{column D}) given their ticket class (\emph{column A}).
+          \begin{solution}
+            $p(0|ticket)=\dfrac{p(ticket|0)*p(0)}{p(ticket)}$.
+
+            $p(1|ticket)=\dfrac{p(ticket|1)*p(1)}{p(ticket)}$.
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part Given an unknown traveler, make a prediction, using results from
+          Part (a) about whether or not they will survive based on their ticket
+          class.
+          \vspace{\stretch{1}}
+
+          \begin{subparts}
+            \subpart What do you notice about this predictive model? How can we
+              improve it?
+              \vspace{\stretch{1}}
+          \end{subparts}
+
+        \part Improve model.
+          \vspace{\stretch{1}}
+      \end{parts}
+  \end{questions}
+\end{document}
