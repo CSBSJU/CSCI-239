@@ -1,0 +1,105 @@
+\documentclass[]{exam}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\pagestyle{empty}
+
+\begin{document}
+  \begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering Answer the questions in the spaces
+    provided on the question sheets. If you run out of room for an answer,
+    continue on a separate sheet of paper.}}}
+  \end{center}
+
+  \section*{Random variables and expectation}
+
+  \begin{questions}
+    \question Consider a game in which a fair die is rolled. If the die comes up
+      1, the player wins \$2. If the die comes up 2, the player wins \$1. For
+      all other outcomes, the player loses \$1. Let $X$ denote the amount of
+      money won by the player for a single role of the die.
+      \begin{parts}
+        \part What is the range of $X$?
+          \begin{solution}
+            \{\ -1,\ 1,\ 2\ \}
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the distribution over the random variable $X$?
+          \begin{solution}
+            $(-1,\dfrac{4}{6}),\ (1,\dfrac{1}{6}), (2,\dfrac{1}{6})$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the expected amount that the player wins or loses, i.e.,
+          what is $E[X]$? Round to the nearest cent.
+          \begin{solution}
+
+            $\displaystyle E[X]=\sum_{s\in S}\limits X(s)p(s) =
+              2\cdot\frac{1}{6} + 1\cdot\frac{1}{6} + (-1)\cdot\frac{1}{6} +
+              (-1)\cdot\frac{1}{6} + (-1)\cdot\frac{1}{6} + 
+              (-1)\cdot\frac{1}{6} = -.16\overline{7}$
+
+            $\displaystyle E[X]=\sum_{r\in X(S)}\limits r\cdot p(X = r) = 
+              2\cdot\frac{1}{6} + 1\cdot\frac{1}{6} + (-1)\cdot\frac{4}{6} =
+              -.16\overline{7}$
+
+            The player loses 17 cents.
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+
+    \newpage
+
+    \question In a network of 40 computers, 5 hold a copy of a particular file.
+      Suppose that 7 computers at random fail. Let $F$ denote the number of
+      computers that fail and have a copy of the file.
+      \begin{parts}
+        \part What is the range of $F$?
+          \begin{solution}
+            \{\ 0,\ 1,\ 2,\ 3,\ 4,\ 5\ \}
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is $p(F = 2)$?
+          \begin{solution}
+            $\dfrac{\binom{5}{2}\binom{35}{5}}{\binom{40}{7}}$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the distribution over the random variable $F$?
+          \begin{solution}
+            $(0,\dfrac{\binom{35}{7}}{\binom{40}{7}}),\
+             (1,\dfrac{\binom{5}{1}\binom{35}{6}}{\binom{40}{7}}),\
+             (2,\dfrac{\binom{5}{2}\binom{35}{5}}{\binom{40}{7}}),\
+             (3,\dfrac{\binom{5}{3}\binom{35}{4}}{\binom{40}{7}}),\
+             (4,\dfrac{\binom{5}{4}\binom{35}{3}}{\binom{40}{7}}),\
+             (5,\dfrac{\binom{5}{5}\binom{35}{2}}{\binom{40}{7}})$
+
+            $\approx (0,.3606),\
+                     (1,.4353),\
+                     (2,.1741),\
+                     (3,.0281),\
+                     (4,.0018),\
+                     (5,.0001)$
+          \end{solution}
+          \vspace{\stretch{1}}
+
+        \part What is the expected number of computers that will fail and have a
+        copy of the file, i.e., what is $E[F]$? Round to the nearest computer.
+          \begin{solution}
+            $\displaystyle E[F]=\sum_{s\in S}\limits F(s)p(s)=\sum_{r\in
+              F(S)}\limits r\cdot p(F = r)$
+
+            $=0\cdot .3606+1\cdot .4353+2\cdot .1741+3\cdot .0281+4\cdot
+              .0018+5\cdot .0001=.8755$
+
+            1 computer with the file will fail.
+          \end{solution}
+          \vspace{\stretch{1}}
+      \end{parts}
+  \end{questions}
+\end{document}
